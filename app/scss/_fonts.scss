@@ -1,0 +1,12 @@
+/* ------------------------------------------------------------ *\
+	fonts
+\* ------------------------------------------------------------ */
+
+@include font-face('lucida-sans', 'fonts/lucida-sans', regular);
+@include font-face('candara', 'fonts/Candara-reg', regular);
+@include font-face('myriadpro-bold', 'fonts/MyriadPro-Bold', bold);
+@include font-face('myriadpro-boldit', 'fonts/MyriadPro-BoldIt', bold, italic);
+@include font-face('myriadpro-it', 'fonts/MyriadPro-It', regular, italic);
+@include font-face('myriadpro-reg', 'fonts/MyriadPro-Regular', regular);
+@include font-face('myriadpro-sbold', 'fonts/MyriadPro-Semibold', 600);
+@include font-face('myriadpro-sboldit', 'fonts/MyriadPro-SemiboldIt', 600, italic);

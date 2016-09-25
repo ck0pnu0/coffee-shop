@@ -1,0 +1,31 @@
+/* ------------------------------------------------------------ *\
+	slider
+\* ------------------------------------------------------------ */
+
+.slider {
+	font-size: 13px; line-height: 1.62; 
+
+	& h2 {
+		font-family: $myriadpro-bold; font-size: 18px; line-height: 1.2;  text-transform: uppercase; font-color: $base-color; padding-bottom: 6px; 
+	}
+
+	& p {
+		padding-bottom: 6px; 
+	}
+
+	& .slider-img img {
+		display: block; margin: 0 auto; max-width: 100%;
+	}
+
+	& .slider-cnt {
+		padding-left: 120px; 
+
+		& a.read-more {
+			color: $color-grey-dark; font-family: $myriadpro-sboldit; 
+
+			&:hover {
+				text-decoration: underline; 
+			}
+		}
+	}
+}

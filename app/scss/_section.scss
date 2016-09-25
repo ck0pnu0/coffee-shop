@@ -2,3 +2,13 @@
 	Sections
 \* ------------------------------------------------------------ */
 
+.section {
+	
+	&.section-slider {
+		background: $overlay-grey; padding: 183px 0 63px; 
+	}
+
+	&.section-services {
+		padding: 120px 0; 
+	}
+}

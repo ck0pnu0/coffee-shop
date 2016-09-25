@@ -1,6 +1,5 @@
 @charset "UTF-8";
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
-@import 'https://fonts.googleapis.com/css?family=Titillium+Web:300,300i,400,400i,600,600i,700,700i';
 article,
 aside,
 details,
@@ -4985,13 +4984,13 @@ table {
 /* ------------------------------------------------------------ *	Base
 \* ------------------------------------------------------------ */
 body {
-  background: #ffffff;
-  font-size: 16px;
-  font-family: "Titillium Web", Arial, sans-serif;
-  line-height: 1.5;
-  color: #505050;
+  background: #fff;
+  font-size: 14px;
+  font-family: "myriadpro-reg", Arial, sans-serif;
+  line-height: 1.57;
+  color: #9d9c9c;
   min-width: 100%;
-  font-weight: 300; }
+  font-weight: 400; }
 
 ul,
 ol {
@@ -5013,41 +5012,41 @@ img {
   height: auto; }
 
 h1 {
-  font-size: 52px;
+  font-size: 24px;
   line-height: 1.2;
-  font-family: "Titillium Web", Arial, sans-serif;
+  font-family: "myriadpro-reg", Arial, sans-serif;
   margin-top: 0; }
 
 h2 {
-  font-size: 42px;
+  font-size: 16px;
   line-height: 1.2;
-  font-family: "Titillium Web", Arial, sans-serif;
+  font-family: "myriadpro-reg", Arial, sans-serif;
   margin-top: 0;
   text-transform: uppercase;
   font-weight: 700; }
 
 h3 {
-  font-size: 32px;
+  font-size: 15px;
   line-height: 1.2;
-  font-family: "Titillium Web", Arial, sans-serif;
+  font-family: "myriadpro-reg", Arial, sans-serif;
   margin-top: 0; }
 
 h4 {
-  font-size: 24px;
+  font-size: 14px;
   line-height: 1.2;
-  font-family: "Titillium Web", Arial, sans-serif;
+  font-family: "myriadpro-reg", Arial, sans-serif;
   margin-top: 0; }
 
 h5 {
-  font-size: 20px;
+  font-size: 12px;
   line-height: 1.2;
-  font-family: "Titillium Web", Arial, sans-serif;
+  font-family: "myriadpro-reg", Arial, sans-serif;
   margin-top: 0; }
 
 h6 {
-  font-size: 16px;
+  font-size: 10px;
   line-height: 1.2;
-  font-family: "Titillium Web", Arial, sans-serif;
+  font-family: "myriadpro-reg", Arial, sans-serif;
   margin-top: 0; }
 
 a:focus {
@@ -5066,1826 +5065,211 @@ img {
   border: 0;
   border: none; }
 
-@media (max-width: 1200px) {
-  h1 {
-    font-size: 48px; }
-  h2 {
-    font-size: 38px; }
-  h3 {
-    font-size: 30px; }
-  h4 {
-    font-size: 20px; }
-  h5 {
-    font-size: 18px; }
-  h6 {
-    font-size: 16px; } }
-
-@media (max-width: 992px) {
-  h1 {
-    font-size: 42px; }
-  h2 {
-    font-size: 34px; }
-  h3 {
-    font-size: 26px; }
-  h4 {
-    font-size: 20px; }
-  h5 {
-    font-size: 16px; }
-  h6 {
-    font-size: 14px; } }
-
 /* ------------------------------------------------------------ *	header
 \* ------------------------------------------------------------ */
 .header {
+  border-top: 10px solid #664735;
+  background: transparent;
+  padding: 40px 0;
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  padding: 57px 0;
-  color: #ffffff;
-  z-index: 99;
-  transition: all 0.4s; }
-  .header.fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 21px 0;
-    background: rgba(0, 0, 0, 0.2); }
-
-@media (max-width: 992px) {
-  .header {
-    padding: 20px 0; } }
-
-@media (max-width: 767px) {
-  .header,
-  .header.fixed {
-    position: fixed;
-    background: rgba(0, 0, 0, 0.2);
-    padding: 14px 0 8px; } }
-
-/* ------------------------------------------------------------ *	Footer
-\* ------------------------------------------------------------ */
-.footer {
-  background: #344b8e;
-  padding: 41px 0;
-  color: #ffffff;
-  font-size: 24px;
-  line-height: 1.25;
-  text-align: center;
-  font-weight: 600; }
-  .footer .social-links ul {
-    margin-bottom: 0; }
-    .footer .social-links ul li {
-      display: inline-block;
-      padding: 0 25px; }
-      .footer .social-links ul li a {
-        display: block;
-        color: #ffffff;
-        -webkit-transition: all 0.4s;
-        -o-transition: all 0.4s;
-        transition: all 0.4s; }
-        .footer .social-links ul li a:hover {
-          text-decoration: none;
-          color: #30bae7; }
-
-@media (max-width: 1200px) {
-  .footer .social-links ul li {
-    padding: 0 20px; } }
-
-@media (max-width: 992px) {
-  .footer .social-links ul li {
-    font-size: 18px;
-    padding: 0 16px; } }
-
-@media (max-width: 767px) {
-  .footer {
-    padding: 20px 0; }
-    .footer .social-links ul li {
-      font-size: 14px; } }
-
-/* ------------------------------------------------------------ *	Logo
-\* ------------------------------------------------------------ */
-.logo {
-  width: 118px;
-  height: 37px;
-  margin-left: 90px; }
-  .logo a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    font-size: 0;
-    line-height: 0;
-    text-indent: -4004px;
-    background: url(../css/images/logo.png) no-repeat 0 0;
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    transition: all 0.4s; }
-    .logo a:hover {
-      opacity: 0.7; }
-
-@media (max-width: 992px) {
-  .logo {
-    margin-left: 20px; } }
-
-/* ------------------------------------------------------------ *	Buttons
-\* ------------------------------------------------------------ */
-.btn {
-  font-size: 18px;
-  line-height: 1.2;
-  text-transform: uppercase;
-  color: #ffffff;
-  border-radius: 3px;
-  padding: 22px;
-  min-width: 290px;
-  display: inline-block;
-  position: relative;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%);
-  color: #ffffff;
-  transition: all 0.4s; }
-  .btn:hover {
-    color: #ffffff;
-    text-decoration: none; }
-  .btn.orange-btn {
-    background: #eb7d4b;
-    border-bottom: 4px solid #c86a40; }
-    .btn.orange-btn:hover {
-      background: #c86a40; }
-  .btn.blue-btn {
-    background: #17c2a4;
-    color: #ffffff;
-    border-bottom: 4px solid #14a58c; }
-    .btn.blue-btn:hover {
-      background: #14a58c; }
-
-/* ------------------------------------------------------------ *	Form
-\* ------------------------------------------------------------ */
-.form-row {
-  width: 882px;
-  margin: 0 auto;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 18px;
-  line-height: 1;
-  padding-bottom: 28px; }
-  .form-row:after {
+  right: 0; }
+  .header:after {
     content: "";
     display: table;
     clear: both; }
-  .form-row input[type='text'],
-  .form-row input[type='email'],
-  .form-row textarea {
-    border: 0;
-    background: rgba(0, 0, 0, 0.2);
-    width: 100%;
-    display: block;
-    padding: 18px 36px;
-    height: 54px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    border-radius: 3px;
-    font-size: 18px;
-    line-height: 1;
-    color: #ffffff; }
-  .form-row textarea {
-    height: 200px;
-    resize: vertical; }
-  .form-row ::-webkit-input-placeholder {
-    color: #ffffff; }
-  .form-row :-moz-placeholder {
-    /* Firefox 18- */
-    color: #ffffff; }
-  .form-row ::-moz-placeholder {
-    /* Firefox 19+ */
-    color: #ffffff; }
-  .form-row :-ms-input-placeholder {
-    color: #ffffff; }
-  .form-row ::-webkit-resizer {
-    width: 11px;
-    height: 11px;
-    background: url(images/temp/textarea-resize.png) no-repeat 0 0; }
-  .form-row input[type='submit'] {
-    border: 0;
-    border-bottom: 4px solid #299ec5;
-    background: #30bae7;
-    color: #ffffff;
-    display: block;
-    padding: 17px 85px;
-    font-weight: 18px;
-    font-weight: 600;
-    text-transform: uppercase;
-    cursor: pointer;
-    border-radius: 3px;
-    line-height: 1.44;
-    letter-spacing: 0.02;
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    transition: all 0.4s;
-    margin: 32px auto 0; }
-    .form-row input[type='submit']:hover, .form-row input[type='submit']:active {
-      background: #299ec5; }
 
-@media (max-width: 767px) {
-  .form-row {
-    padding-bottom: 0; }
-    .form-row div {
-      margin-bottom: 28px; }
-    .form-row input[type='submit'] {
-      max-width: 100%; }
-    .form-row ::-webkit-input-placeholder {
-      padding-top: 4px; }
-    .form-row :-ms-input-placeholder {
-      padding-top: 4px; } }
+/* ------------------------------------------------------------ *	Footer
+\* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ *	wrapper
+\* ------------------------------------------------------------ */
+.wrapper {
+  position: relative; }
+
+/* ------------------------------------------------------------ *	Logo
+\* ------------------------------------------------------------ */
+.logo a {
+  font-size: 0;
+  line-height: 0;
+  text-indent: -4004px;
+  width: 106px;
+  height: 52px;
+  display: block;
+  background: url(images/logo.png) no-repeat 0 0;
+  transition: opacity 0.2s;
+  margin-left: 43px; }
+  .logo a:hover {
+    opacity: 0.7; }
+
+/* ------------------------------------------------------------ *	Buttons
+\* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ *	Form
+\* ------------------------------------------------------------ */
+::-webkit-input-placeholder {
+  color: #fff; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #fff; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #fff; }
+
+:-ms-input-placeholder {
+  color: #fff; }
 
 /* ------------------------------------------------------------ *	Sections
 \* ------------------------------------------------------------ */
-.section {
-  padding: 110px 0;
-  position: relative; }
-  .section h2 {
-    text-align: center;
-    text-transform: none;
-    padding-bottom: 15px;
-    position: relative;
-    display: block;
-    margin-bottom: 17px;
-    font-weight: 700; }
-    .section h2:before {
-      content: '';
-      width: 86px;
-      height: 4px;
-      font-size: 0;
-      line-height: 0;
-      text-indent: -4004px;
-      display: block;
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      margin-left: -43px;
-      background: rgba(0, 0, 0, 0.2); }
-  .section .section-head {
-    padding-bottom: 65px;
-    text-align: center;
-    margin: 0 auto;
+.section.section-slider {
+  background: #e8e8e8;
+  padding: 183px 0 63px; }
+
+.section.section-services {
+  padding: 120px 0; }
+
+/* ------------------------------------------------------------ *	Article
+\* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ *	slider
+\* ------------------------------------------------------------ */
+.slider {
+  font-size: 13px;
+  line-height: 1.62; }
+  .slider h2 {
+    font-family: "myriadpro-bold", Arial, sans-serif;
     font-size: 18px;
-    line-height: 1.4;
-    font-weight: 400;
-    position: relative;
-    z-index: 3; }
-    .section .section-head h2 {
-      letter-spacing: 0.06em; }
-  .section .section-body {
-    position: relative;
-    z-index: 3; }
-    .section .section-body:after {
-      content: "";
-      display: table;
-      clear: both; }
-    .section .section-body h4 {
-      font-weight: 700; }
-  .section:before {
-    content: '';
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-color: #9d9c9c;
+    padding-bottom: 6px; }
+  .slider p {
+    padding-bottom: 6px; }
+  .slider .slider-img img {
     display: block;
-    width: 100%;
-    height: 100%;
-    font-size: 0;
-    line-height: 0;
-    text-indent: -4004px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    opacity: 0.90; }
-  .section.section-welcome {
-    background: url(images/temp/welcome.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
-    padding-top: 226px;
-    color: #ffffff;
-    padding-bottom: 140px; }
-    .section.section-welcome:before {
-      background: #87509c; }
-    .section.section-welcome .section-body {
-      padding: 0 86px; }
-    .section.section-welcome h2 {
-      color: #ffffff;
-      padding-bottom: 45px; }
-      .section.section-welcome h2:before {
-        display: none; }
-  .section.section-services {
-    background: #17c2a4;
-    color: #ffffff;
-    padding-bottom: 128px; }
-    .section.section-services h2 {
-      color: #ffffff; }
-    .section.section-services .section-head {
-      width: 640px; }
-    .section.section-services .section-body {
-      padding-top: 12px; }
-  .section.section-team {
-    background: url(images/temp/team.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed; }
-    .section.section-team:before {
-      background: #e7f1f8; }
-    .section.section-team .section-head {
-      width: 660px; }
-    .section.section-team .section-body {
-      padding-top: 17px; }
-  .section.section-skills .section-head {
-    width: 580px; }
-  .section.section-portfolio {
-    background: url(images/temp/portfolio.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed; }
-    .section.section-portfolio:before {
-      background: #ffdd99;
-      opacity: 0.95; }
-    .section.section-portfolio .section-head {
-      width: 540px; }
-  .section.section-testimonials {
-    color: #ffffff;
-    padding-bottom: 0;
-    background: url(images/temp/testimonials.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed; }
-    .section.section-testimonials:before {
-      background: #d74680; }
-    .section.section-testimonials .section-body {
-      padding-top: 18px; }
-  .section.section-contact {
-    color: #ffffff;
-    background: url(images/temp/contact.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed; }
-    .section.section-contact:before {
-      background: #3c5499;
-      opacity: 0.95; }
-    .section.section-contact .section-head {
-      width: 850px; }
-    .section.section-contact .section-body {
-      padding-top: 13px; }
-
-@media (max-width: 1200px) {
-  .section.section-testimonials {
-    padding-bottom: 30px; }
-  .section.section-contact .section-head {
-    width: auto;
-    padding: 0 60px 65px; }
-  .section.section-contact .section-body .form-row {
-    width: auto; } }
-
-@media (max-width: 1200px) {
-  .section h2 {
-    padding-bottom: 20px; } }
-
-@media (max-width: 992px) {
-  .section h2 {
-    padding-bottom: 20px;
-    margin-bottom: 15px; }
-    .section h2 br {
-      display: none; }
-  .section .section-head {
+    margin: 0 auto;
     max-width: 100%; }
-  .section.section-welcome {
-    padding: 140px 0 100px;
-    -webkit-background-size: auto 100%;
-    background-size: auto 100%;
-    background-attachment: scroll; }
-    .section.section-welcome h2 {
-      margin-bottom: 0; }
-  .section.section-testimonials, .section.section-portfolio {
-    -webkit-background-size: auto 100%;
-    background-size: auto 100%;
-    background-attachment: scroll; }
-  .section.section-contact {
-    padding-bottom: 82px;
-    -webkit-background-size: auto 100%;
-    background-size: auto 100%;
-    background-attachment: scroll; }
-  .section.section-services {
-    padding-bottom: 60px; }
-  .section.section-team {
-    padding-bottom: 60px;
-    -webkit-background-size: auto 100%;
-    background-size: auto 100%;
-    background-attachment: scroll; } }
-
-@media (max-width: 767px) {
-  .section {
-    padding: 80px 0 50px; }
-    .section.section-welcome {
-      padding: 80px 0 50px; }
-    .section.section-services {
-      padding-bottom: 0; }
-    .section.section-welcome {
-      padding-top: 120px; }
-    .section.section-welcome .section-body,
-    .section .section-body {
-      padding: 0; }
-    .section .section-head,
-    .section.section-team .section-head,
-    .section.section-skills .section-head {
-      max-width: 100%;
-      width: auto; }
-    .section.section-team {
-      padding-bottom: 0; }
-      .section.section-team .section-head {
-        padding-bottom: 30px; }
-    .section.section-skills {
-      padding-bottom: 10px; }
-      .section.section-skills .section-head {
-        padding-bottom: 40px; }
-    .section.section-contact .section-head {
-      padding: 0 20px 30px; }
-    .section.section-contact .section-body {
-      position: relative;
-      margin: 0 -15px; } }
+  .slider .slider-cnt {
+    padding-left: 120px; }
+    .slider .slider-cnt a.read-more {
+      color: #6f6d6d;
+      font-family: "myriadpro-sboldit", Arial, sans-serif; }
+      .slider .slider-cnt a.read-more:hover {
+        text-decoration: underline; }
 
 /* ------------------------------------------------------------ *	Services
 \* ------------------------------------------------------------ */
 .service {
-  text-align: center; }
-  .service .service-img {
-    padding-bottom: 57px; }
-    .service .service-img img {
-      display: block;
-      margin: 0 auto; }
-  .service h4 {
-    text-transform: uppercase;
-    padding-bottom: 14px; }
-
-@media (max-width: 992px) {
-  .service {
-    padding-bottom: 50px; } }
-
-/* ------------------------------------------------------------ *	Team
-\* ------------------------------------------------------------ */
-.team {
   text-align: center;
-  line-height: 1.5;
-  font-size: 16px; }
-  .team h4 {
-    text-transform: uppercase;
-    padding-bottom: 8px; }
-  .team h6 {
-    color: #30bae7;
-    font-weight: 400; }
-  .team .team-head {
-    padding: 0 25px 21px; }
-    .team .team-head img {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      display: block;
-      margin: 0 auto 36px; }
-  .team .team-body {
-    padding: 0 25px 27px; }
-  .team .team-foot {
-    color: #ffffff;
-    text-align: center;
-    padding-bottom: 12px; }
-    .team .team-foot .socials a {
-      color: #ffffff;
-      display: inline-block;
-      border-radius: 50%;
-      background: #bdd1df;
-      margin: 0 6px;
-      width: 32px;
-      height: 32px;
-      line-height: 2;
-      font-size: 16px;
-      transition: all 0.4s; }
-      .team .team-foot .socials a:hover {
-        background: #878787;
-        text-decoration: none; }
-
-@media (max-width: 1200px) {
-  .team .team-head {
-    width: 100%;
-    height: auto;
-    padding: 0 15px 20px; }
-    .team .team-head img {
-      width: 100%;
-      height: auto; }
-  .team .team-body {
-    padding: 0 15px 25px; } }
-
-@media (max-width: 992px) {
-  .team {
-    padding-bottom: 50px; } }
-
-/* ------------------------------------------------------------ *  Percentage Chart
-\* ------------------------------------------------------------ */
-.chart-circle {
-  width: 100px;
-  height: 100px;
-  position: relative;
-  margin: 0 auto 24px; }
-  .chart-circle .chart {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100px;
-    height: 100px;
-    margin: auto;
-    font-size: 24px;
-    font-family: "Titillium Web", Arial, sans-serif;
-    border-radius: 50%;
-    box-shadow: inset 0 0 0px 10px #cacaca;
-    overflow: hidden; }
-    .chart-circle .chart:before {
-      content: attr(data-percentage) "%";
-      position: absolute;
-      display: block;
-      width: 100px;
-      height: 100px;
-      line-height: 100px;
-      text-align: center;
-      opacity: 0;
-      border-radius: 50%;
-      transition: opacity 0s linear 0s; }
-  .chart-circle .percentage {
-    position: absolute;
-    top: 38px;
-    z-index: 1;
-    height: 24px;
-    width: 100px;
-    font-size: 24px;
-    line-height: 24px;
-    text-indent: 27px;
-    overflow: hidden;
-    visibility: visibile;
-    transition: visibility 0s linear 0s; }
-    .chart-circle .percentage:before, .chart-circle .percentage:after {
-      position: absolute;
-      top: 0px;
-      font-size: 24px;
-      line-height: 24px;
-      white-space: pre;
-      text-indent: 0; }
-    .chart-circle .percentage:before {
-      content: "0 \a 1 \a 2 \a 3 \a 4 \a 5 \a 6 \a 7 \a 8 \a 9";
-      left: 29px; }
-    .chart-circle .percentage:after {
-      content: "0 \a 1 \a 2 \a 3 \a 4 \a 5 \a 6 \a 7 \a 8 \a 9";
-      left: 43px; }
-  .chart-circle .completed {
-    position: absolute;
-    top: 0;
-    left: 0; }
-    .chart-circle .completed:before, .chart-circle .completed:after {
-      content: '';
-      position: absolute;
-      width: 100px;
-      height: 100px;
-      box-shadow: inset 0 0 0px 10px #006341;
-      border-radius: 50%; }
-    .chart-circle .completed:before {
-      clip: rect(0 100px 100px 50px); }
-    .chart-circle .completed:after {
-      clip: rect(0 50px 100px 0); }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="0"].active:before {
-    opacity: 1;
-    transition: opacity 0s linear 2s; }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="0"].active .percentage {
-    visibility: hidden;
-    transition: visibility 0s linear 2s; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="0"].active .percentage:before {
-      animation: tens-0 2s 1 steps(0, end); }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="0"].active .percentage:after {
-      animation: ones-0 20s 0.1 steps(10, end); }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="0"].active .completed {
-    clip: rect(0 100px 100px 50px); }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="0"].active .completed:before {
-      transform: rotate(-180deg);
-      animation: first-0 2s 1 ease-out; }
-
-@keyframes tens-0 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-0px); } }
-
-@keyframes ones-0 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-240px); } }
-
-@keyframes mask-0 {
-  0%, 50% {
-    clip: rect(0 100px 100px 50px); }
-  50.01%, 100% {
-    clip: rect(0 100px 100px 0px); } }
-
-@keyframes first-0 {
-  0% {
-    transform: rotate(-180deg); }
-  50%, 100% {
-    transform: rotate(-180deg); } }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="5"].active:before {
-    opacity: 1;
-    transition: opacity 0s linear 2s; }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="5"].active .percentage {
-    visibility: hidden;
-    transition: visibility 0s linear 2s; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="5"].active .percentage:before {
-      animation: tens-5 2s 1 steps(1, end); }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="5"].active .percentage:after {
-      animation: ones-5 3.33333s 0.6 steps(10, end); }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="5"].active .completed {
-    clip: rect(0 100px 100px 50px); }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="5"].active .completed:before {
-      transform: rotate(-162deg);
-      animation: first-5 2s 1 ease-out; }
-
-@keyframes tens-5 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-24px); } }
-
-@keyframes ones-5 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-240px); } }
-
-@keyframes mask-5 {
-  0%, 50% {
-    clip: rect(0 100px 100px 50px); }
-  50.01%, 100% {
-    clip: rect(0 100px 100px 0px); } }
-
-@keyframes first-5 {
-  0% {
-    transform: rotate(-180deg); }
-  50%, 100% {
-    transform: rotate(-162deg); } }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="10"].active:before {
-    opacity: 1;
-    transition: opacity 0s linear 2s; }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="10"].active .percentage {
-    visibility: hidden;
-    transition: visibility 0s linear 2s; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="10"].active .percentage:before {
-      animation: tens-10 2s 1 steps(1, end); }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="10"].active .percentage:after {
-      animation: ones-10 1.81818s 1.1 steps(10, end); }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="10"].active .completed {
-    clip: rect(0 100px 100px 50px); }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="10"].active .completed:before {
-      transform: rotate(-144deg);
-      animation: first-10 2s 1 ease-out; }
-
-@keyframes tens-10 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-24px); } }
-
-@keyframes ones-10 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-240px); } }
-
-@keyframes mask-10 {
-  0%, 50% {
-    clip: rect(0 100px 100px 50px); }
-  50.01%, 100% {
-    clip: rect(0 100px 100px 0px); } }
-
-@keyframes first-10 {
-  0% {
-    transform: rotate(-180deg); }
-  50%, 100% {
-    transform: rotate(-144deg); } }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="15"].active:before {
-    opacity: 1;
-    transition: opacity 0s linear 2s; }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="15"].active .percentage {
-    visibility: hidden;
-    transition: visibility 0s linear 2s; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="15"].active .percentage:before {
-      animation: tens-15 2s 1 steps(2, end); }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="15"].active .percentage:after {
-      animation: ones-15 1.25s 1.6 steps(10, end); }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="15"].active .completed {
-    clip: rect(0 100px 100px 50px); }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="15"].active .completed:before {
-      transform: rotate(-126deg);
-      animation: first-15 2s 1 ease-out; }
-
-@keyframes tens-15 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-48px); } }
-
-@keyframes ones-15 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-240px); } }
-
-@keyframes mask-15 {
-  0%, 50% {
-    clip: rect(0 100px 100px 50px); }
-  50.01%, 100% {
-    clip: rect(0 100px 100px 0px); } }
-
-@keyframes first-15 {
-  0% {
-    transform: rotate(-180deg); }
-  50%, 100% {
-    transform: rotate(-126deg); } }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="20"].active:before {
-    opacity: 1;
-    transition: opacity 0s linear 2s; }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="20"].active .percentage {
-    visibility: hidden;
-    transition: visibility 0s linear 2s; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="20"].active .percentage:before {
-      animation: tens-20 2s 1 steps(2, end); }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="20"].active .percentage:after {
-      animation: ones-20 0.95238s 2.1 steps(10, end); }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="20"].active .completed {
-    clip: rect(0 100px 100px 50px); }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="20"].active .completed:before {
-      transform: rotate(-108deg);
-      animation: first-20 2s 1 ease-out; }
-
-@keyframes tens-20 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-48px); } }
-
-@keyframes ones-20 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-240px); } }
-
-@keyframes mask-20 {
-  0%, 50% {
-    clip: rect(0 100px 100px 50px); }
-  50.01%, 100% {
-    clip: rect(0 100px 100px 0px); } }
-
-@keyframes first-20 {
-  0% {
-    transform: rotate(-180deg); }
-  50%, 100% {
-    transform: rotate(-108deg); } }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="25"].active:before {
-    opacity: 1;
-    transition: opacity 0s linear 2s; }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="25"].active .percentage {
-    visibility: hidden;
-    transition: visibility 0s linear 2s; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="25"].active .percentage:before {
-      animation: tens-25 2s 1 steps(3, end); }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="25"].active .percentage:after {
-      animation: ones-25 0.76923s 2.6 steps(10, end); }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="25"].active .completed {
-    clip: rect(0 100px 100px 50px); }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="25"].active .completed:before {
-      transform: rotate(-90deg);
-      animation: first-25 2s 1 ease-out; }
-
-@keyframes tens-25 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-72px); } }
-
-@keyframes ones-25 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-240px); } }
-
-@keyframes mask-25 {
-  0%, 50% {
-    clip: rect(0 100px 100px 50px); }
-  50.01%, 100% {
-    clip: rect(0 100px 100px 0px); } }
-
-@keyframes first-25 {
-  0% {
-    transform: rotate(-180deg); }
-  50%, 100% {
-    transform: rotate(-90deg); } }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="30"].active:before {
-    opacity: 1;
-    transition: opacity 0s linear 2s; }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="30"].active .percentage {
-    visibility: hidden;
-    transition: visibility 0s linear 2s; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="30"].active .percentage:before {
-      animation: tens-30 2s 1 steps(3, end); }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="30"].active .percentage:after {
-      animation: ones-30 0.64516s 3.1 steps(10, end); }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="30"].active .completed {
-    clip: rect(0 100px 100px 50px); }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="30"].active .completed:before {
-      transform: rotate(-72deg);
-      animation: first-30 2s 1 ease-out; }
-
-@keyframes tens-30 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-72px); } }
-
-@keyframes ones-30 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-240px); } }
-
-@keyframes mask-30 {
-  0%, 50% {
-    clip: rect(0 100px 100px 50px); }
-  50.01%, 100% {
-    clip: rect(0 100px 100px 0px); } }
-
-@keyframes first-30 {
-  0% {
-    transform: rotate(-180deg); }
-  50%, 100% {
-    transform: rotate(-72deg); } }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="35"].active:before {
-    opacity: 1;
-    transition: opacity 0s linear 2s; }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="35"].active .percentage {
-    visibility: hidden;
-    transition: visibility 0s linear 2s; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="35"].active .percentage:before {
-      animation: tens-35 2s 1 steps(4, end); }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="35"].active .percentage:after {
-      animation: ones-35 0.55556s 3.6 steps(10, end); }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="35"].active .completed {
-    clip: rect(0 100px 100px 50px); }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="35"].active .completed:before {
-      transform: rotate(-54deg);
-      animation: first-35 2s 1 ease-out; }
-
-@keyframes tens-35 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-96px); } }
-
-@keyframes ones-35 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-240px); } }
-
-@keyframes mask-35 {
-  0%, 50% {
-    clip: rect(0 100px 100px 50px); }
-  50.01%, 100% {
-    clip: rect(0 100px 100px 0px); } }
-
-@keyframes first-35 {
-  0% {
-    transform: rotate(-180deg); }
-  50%, 100% {
-    transform: rotate(-54deg); } }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="40"].active:before {
-    opacity: 1;
-    transition: opacity 0s linear 2s; }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="40"].active .percentage {
-    visibility: hidden;
-    transition: visibility 0s linear 2s; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="40"].active .percentage:before {
-      animation: tens-40 2s 1 steps(4, end); }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="40"].active .percentage:after {
-      animation: ones-40 0.4878s 4.1 steps(10, end); }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="40"].active .completed {
-    clip: rect(0 100px 100px 50px); }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="40"].active .completed:before {
-      transform: rotate(-36deg);
-      animation: first-40 2s 1 ease-out; }
-
-@keyframes tens-40 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-96px); } }
-
-@keyframes ones-40 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-240px); } }
-
-@keyframes mask-40 {
-  0%, 50% {
-    clip: rect(0 100px 100px 50px); }
-  50.01%, 100% {
-    clip: rect(0 100px 100px 0px); } }
-
-@keyframes first-40 {
-  0% {
-    transform: rotate(-180deg); }
-  50%, 100% {
-    transform: rotate(-36deg); } }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="45"].active:before {
-    opacity: 1;
-    transition: opacity 0s linear 2s; }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="45"].active .percentage {
-    visibility: hidden;
-    transition: visibility 0s linear 2s; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="45"].active .percentage:before {
-      animation: tens-45 2s 1 steps(5, end); }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="45"].active .percentage:after {
-      animation: ones-45 0.43478s 4.6 steps(10, end); }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="45"].active .completed {
-    clip: rect(0 100px 100px 50px); }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="45"].active .completed:before {
-      transform: rotate(-18deg);
-      animation: first-45 2s 1 ease-out; }
-
-@keyframes tens-45 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-120px); } }
-
-@keyframes ones-45 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-240px); } }
-
-@keyframes mask-45 {
-  0%, 50% {
-    clip: rect(0 100px 100px 50px); }
-  50.01%, 100% {
-    clip: rect(0 100px 100px 0px); } }
-
-@keyframes first-45 {
-  0% {
-    transform: rotate(-180deg); }
-  50%, 100% {
-    transform: rotate(-18deg); } }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="50"].active:before {
-    opacity: 1;
-    transition: opacity 0s linear 2s; }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="50"].active .percentage {
-    visibility: hidden;
-    transition: visibility 0s linear 2s; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="50"].active .percentage:before {
-      animation: tens-50 2s 1 steps(5, end); }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="50"].active .percentage:after {
-      animation: ones-50 0.39216s 5.1 steps(10, end); }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="50"].active .completed {
-    clip: rect(0 100px 100px 50px); }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="50"].active .completed:before {
-      transform: rotate(0deg);
-      animation: first-50 2s 1 ease-out; }
-
-@keyframes tens-50 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-120px); } }
-
-@keyframes ones-50 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-240px); } }
-
-@keyframes mask-50 {
-  0%, 50% {
-    clip: rect(0 100px 100px 50px); }
-  50.01%, 100% {
-    clip: rect(0 100px 100px 0px); } }
-
-@keyframes first-50 {
-  0% {
-    transform: rotate(-180deg); }
-  50%, 100% {
-    transform: rotate(0deg); } }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="55"].active:before {
-    opacity: 1;
-    transition: opacity 0s linear 2s; }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="55"].active .percentage {
-    visibility: hidden;
-    transition: visibility 0s linear 2s; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="55"].active .percentage:before {
-      animation: tens-55 2s 1 steps(6, end); }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="55"].active .percentage:after {
-      animation: ones-55 0.35714s 5.6 steps(10, end); }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="55"].active .completed {
-    clip: rect(0 100px 100px 0px);
-    animation: mask-55 2s linear; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="55"].active .completed:before {
-      transform: rotate(0deg);
-      animation: first-55 2s 1 linear; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="55"].active .completed:after {
-      transform: rotate(-162deg);
-      animation: second-55 2s 1 ease-out; }
-
-@keyframes tens-55 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-144px); } }
-
-@keyframes ones-55 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-240px); } }
-
-@keyframes mask-55 {
-  0%, 50% {
-    clip: rect(0 100px 100px 50px); }
-  50.01%, 100% {
-    clip: rect(0 100px 100px 0px); } }
-
-@keyframes first-55 {
-  0% {
-    transform: rotate(-180deg); }
-  50%, 100% {
-    transform: rotate(0deg); } }
-
-@keyframes second-55 {
-  0%, 50% {
-    transform: rotate(0deg); }
-  50.01% {
-    transform: rotate(-180deg); }
-  100% {
-    transform: rotate(-162deg); } }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="60"].active:before {
-    opacity: 1;
-    transition: opacity 0s linear 2s; }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="60"].active .percentage {
-    visibility: hidden;
-    transition: visibility 0s linear 2s; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="60"].active .percentage:before {
-      animation: tens-60 2s 1 steps(6, end); }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="60"].active .percentage:after {
-      animation: ones-60 0.32787s 6.1 steps(10, end); }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="60"].active .completed {
-    clip: rect(0 100px 100px 0px);
-    animation: mask-60 2s linear; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="60"].active .completed:before {
-      transform: rotate(0deg);
-      animation: first-60 2s 1 linear; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="60"].active .completed:after {
-      transform: rotate(-144deg);
-      animation: second-60 2s 1 ease-out; }
-
-@keyframes tens-60 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-144px); } }
-
-@keyframes ones-60 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-240px); } }
-
-@keyframes mask-60 {
-  0%, 50% {
-    clip: rect(0 100px 100px 50px); }
-  50.01%, 100% {
-    clip: rect(0 100px 100px 0px); } }
-
-@keyframes first-60 {
-  0% {
-    transform: rotate(-180deg); }
-  50%, 100% {
-    transform: rotate(0deg); } }
-
-@keyframes second-60 {
-  0%, 50% {
-    transform: rotate(0deg); }
-  50.01% {
-    transform: rotate(-180deg); }
-  100% {
-    transform: rotate(-144deg); } }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="65"].active:before {
-    opacity: 1;
-    transition: opacity 0s linear 2s; }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="65"].active .percentage {
-    visibility: hidden;
-    transition: visibility 0s linear 2s; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="65"].active .percentage:before {
-      animation: tens-65 2s 1 steps(7, end); }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="65"].active .percentage:after {
-      animation: ones-65 0.30303s 6.6 steps(10, end); }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="65"].active .completed {
-    clip: rect(0 100px 100px 0px);
-    animation: mask-65 2s linear; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="65"].active .completed:before {
-      transform: rotate(0deg);
-      animation: first-65 2s 1 linear; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="65"].active .completed:after {
-      transform: rotate(-126deg);
-      animation: second-65 2s 1 ease-out; }
-
-@keyframes tens-65 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-168px); } }
-
-@keyframes ones-65 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-240px); } }
-
-@keyframes mask-65 {
-  0%, 50% {
-    clip: rect(0 100px 100px 50px); }
-  50.01%, 100% {
-    clip: rect(0 100px 100px 0px); } }
-
-@keyframes first-65 {
-  0% {
-    transform: rotate(-180deg); }
-  50%, 100% {
-    transform: rotate(0deg); } }
-
-@keyframes second-65 {
-  0%, 50% {
-    transform: rotate(0deg); }
-  50.01% {
-    transform: rotate(-180deg); }
-  100% {
-    transform: rotate(-126deg); } }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="70"].active:before {
-    opacity: 1;
-    transition: opacity 0s linear 2s; }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="70"].active .percentage {
-    visibility: hidden;
-    transition: visibility 0s linear 2s; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="70"].active .percentage:before {
-      animation: tens-70 2s 1 steps(7, end); }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="70"].active .percentage:after {
-      animation: ones-70 0.28169s 7.1 steps(10, end); }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="70"].active .completed {
-    clip: rect(0 100px 100px 0px);
-    animation: mask-70 2s linear; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="70"].active .completed:before {
-      transform: rotate(0deg);
-      animation: first-70 2s 1 linear; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="70"].active .completed:after {
-      transform: rotate(-108deg);
-      animation: second-70 2s 1 ease-out; }
-
-@keyframes tens-70 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-168px); } }
-
-@keyframes ones-70 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-240px); } }
-
-@keyframes mask-70 {
-  0%, 50% {
-    clip: rect(0 100px 100px 50px); }
-  50.01%, 100% {
-    clip: rect(0 100px 100px 0px); } }
-
-@keyframes first-70 {
-  0% {
-    transform: rotate(-180deg); }
-  50%, 100% {
-    transform: rotate(0deg); } }
-
-@keyframes second-70 {
-  0%, 50% {
-    transform: rotate(0deg); }
-  50.01% {
-    transform: rotate(-180deg); }
-  100% {
-    transform: rotate(-108deg); } }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="75"].active:before {
-    opacity: 1;
-    transition: opacity 0s linear 2s; }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="75"].active .percentage {
-    visibility: hidden;
-    transition: visibility 0s linear 2s; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="75"].active .percentage:before {
-      animation: tens-75 2s 1 steps(8, end); }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="75"].active .percentage:after {
-      animation: ones-75 0.26316s 7.6 steps(10, end); }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="75"].active .completed {
-    clip: rect(0 100px 100px 0px);
-    animation: mask-75 2s linear; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="75"].active .completed:before {
-      transform: rotate(0deg);
-      animation: first-75 2s 1 linear; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="75"].active .completed:after {
-      transform: rotate(-90deg);
-      animation: second-75 2s 1 ease-out; }
-
-@keyframes tens-75 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-192px); } }
-
-@keyframes ones-75 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-240px); } }
-
-@keyframes mask-75 {
-  0%, 50% {
-    clip: rect(0 100px 100px 50px); }
-  50.01%, 100% {
-    clip: rect(0 100px 100px 0px); } }
-
-@keyframes first-75 {
-  0% {
-    transform: rotate(-180deg); }
-  50%, 100% {
-    transform: rotate(0deg); } }
-
-@keyframes second-75 {
-  0%, 50% {
-    transform: rotate(0deg); }
-  50.01% {
-    transform: rotate(-180deg); }
-  100% {
-    transform: rotate(-90deg); } }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="80"].active:before {
-    opacity: 1;
-    transition: opacity 0s linear 2s; }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="80"].active .percentage {
-    visibility: hidden;
-    transition: visibility 0s linear 2s; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="80"].active .percentage:before {
-      animation: tens-80 2s 1 steps(8, end); }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="80"].active .percentage:after {
-      animation: ones-80 0.24691s 8.1 steps(10, end); }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="80"].active .completed {
-    clip: rect(0 100px 100px 0px);
-    animation: mask-80 2s linear; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="80"].active .completed:before {
-      transform: rotate(0deg);
-      animation: first-80 2s 1 linear; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="80"].active .completed:after {
-      transform: rotate(-72deg);
-      animation: second-80 2s 1 ease-out; }
-
-@keyframes tens-80 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-192px); } }
-
-@keyframes ones-80 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-240px); } }
-
-@keyframes mask-80 {
-  0%, 50% {
-    clip: rect(0 100px 100px 50px); }
-  50.01%, 100% {
-    clip: rect(0 100px 100px 0px); } }
-
-@keyframes first-80 {
-  0% {
-    transform: rotate(-180deg); }
-  50%, 100% {
-    transform: rotate(0deg); } }
-
-@keyframes second-80 {
-  0%, 50% {
-    transform: rotate(0deg); }
-  50.01% {
-    transform: rotate(-180deg); }
-  100% {
-    transform: rotate(-72deg); } }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="85"].active:before {
-    opacity: 1;
-    transition: opacity 0s linear 2s; }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="85"].active .percentage {
-    visibility: hidden;
-    transition: visibility 0s linear 2s; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="85"].active .percentage:before {
-      animation: tens-85 2s 1 steps(9, end); }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="85"].active .percentage:after {
-      animation: ones-85 0.23256s 8.6 steps(10, end); }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="85"].active .completed {
-    clip: rect(0 100px 100px 0px);
-    animation: mask-85 2s linear; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="85"].active .completed:before {
-      transform: rotate(0deg);
-      animation: first-85 2s 1 linear; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="85"].active .completed:after {
-      transform: rotate(-54deg);
-      animation: second-85 2s 1 ease-out; }
-
-@keyframes tens-85 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-216px); } }
-
-@keyframes ones-85 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-240px); } }
-
-@keyframes mask-85 {
-  0%, 50% {
-    clip: rect(0 100px 100px 50px); }
-  50.01%, 100% {
-    clip: rect(0 100px 100px 0px); } }
-
-@keyframes first-85 {
-  0% {
-    transform: rotate(-180deg); }
-  50%, 100% {
-    transform: rotate(0deg); } }
-
-@keyframes second-85 {
-  0%, 50% {
-    transform: rotate(0deg); }
-  50.01% {
-    transform: rotate(-180deg); }
-  100% {
-    transform: rotate(-54deg); } }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="90"].active:before {
-    opacity: 1;
-    transition: opacity 0s linear 2s; }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="90"].active .percentage {
-    visibility: hidden;
-    transition: visibility 0s linear 2s; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="90"].active .percentage:before {
-      animation: tens-90 2s 1 steps(9, end); }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="90"].active .percentage:after {
-      animation: ones-90 0.21978s 9.1 steps(10, end); }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="90"].active .completed {
-    clip: rect(0 100px 100px 0px);
-    animation: mask-90 2s linear; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="90"].active .completed:before {
-      transform: rotate(0deg);
-      animation: first-90 2s 1 linear; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="90"].active .completed:after {
-      transform: rotate(-36deg);
-      animation: second-90 2s 1 ease-out; }
-
-@keyframes tens-90 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-216px); } }
-
-@keyframes ones-90 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-240px); } }
-
-@keyframes mask-90 {
-  0%, 50% {
-    clip: rect(0 100px 100px 50px); }
-  50.01%, 100% {
-    clip: rect(0 100px 100px 0px); } }
-
-@keyframes first-90 {
-  0% {
-    transform: rotate(-180deg); }
-  50%, 100% {
-    transform: rotate(0deg); } }
-
-@keyframes second-90 {
-  0%, 50% {
-    transform: rotate(0deg); }
-  50.01% {
-    transform: rotate(-180deg); }
-  100% {
-    transform: rotate(-36deg); } }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="95"].active:before {
-    opacity: 1;
-    transition: opacity 0s linear 2s; }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="95"].active .percentage {
-    visibility: hidden;
-    transition: visibility 0s linear 2s; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="95"].active .percentage:before {
-      animation: tens-95 2s 1 steps(10, end); }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="95"].active .percentage:after {
-      animation: ones-95 0.20833s 9.6 steps(10, end); }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="95"].active .completed {
-    clip: rect(0 100px 100px 0px);
-    animation: mask-95 2s linear; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="95"].active .completed:before {
-      transform: rotate(0deg);
-      animation: first-95 2s 1 linear; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="95"].active .completed:after {
-      transform: rotate(-18deg);
-      animation: second-95 2s 1 ease-out; }
-
-@keyframes tens-95 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-240px); } }
-
-@keyframes ones-95 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-240px); } }
-
-@keyframes mask-95 {
-  0%, 50% {
-    clip: rect(0 100px 100px 50px); }
-  50.01%, 100% {
-    clip: rect(0 100px 100px 0px); } }
-
-@keyframes first-95 {
-  0% {
-    transform: rotate(-180deg); }
-  50%, 100% {
-    transform: rotate(0deg); } }
-
-@keyframes second-95 {
-  0%, 50% {
-    transform: rotate(0deg); }
-  50.01% {
-    transform: rotate(-180deg); }
-  100% {
-    transform: rotate(-18deg); } }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="100"].active:before {
-    opacity: 1;
-    transition: opacity 0s linear 2s; }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="100"].active .percentage {
-    visibility: hidden;
-    transition: visibility 0s linear 2s; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="100"].active .percentage:before {
-      animation: tens-100 2s 1 steps(10, end); }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="100"].active .percentage:after {
-      animation: ones-100 0.19802s 10.1 steps(10, end); }
-  .chart-circle [type="checkbox"]:checked ~ [data-percentage="100"].active .completed {
-    clip: rect(0 100px 100px 0px);
-    animation: mask-100 2s linear; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="100"].active .completed:before {
-      transform: rotate(0deg);
-      animation: first-100 2s 1 linear; }
-    .chart-circle [type="checkbox"]:checked ~ [data-percentage="100"].active .completed:after {
-      transform: rotate(0deg);
-      animation: second-100 2s 1 ease-out; }
-
-@keyframes tens-100 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-240px); } }
-
-@keyframes ones-100 {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(-240px); } }
-
-@keyframes mask-100 {
-  0%, 50% {
-    clip: rect(0 100px 100px 50px); }
-  50.01%, 100% {
-    clip: rect(0 100px 100px 0px); } }
-
-@keyframes first-100 {
-  0% {
-    transform: rotate(-180deg); }
-  50%, 100% {
-    transform: rotate(0deg); } }
-
-@keyframes second-100 {
-  0%, 50% {
-    transform: rotate(0deg); }
-  50.01% {
-    transform: rotate(-180deg); }
-  100% {
-    transform: rotate(0deg); } }
-  .chart-circle [type="checkbox"] {
-    visibility: hidden;
-    /*&:checked {
-      + label {
-        color: #000;
-        background: #ddd;
-        
-        &:before {
-          content: 'reset';
-        }
-      }
-    }*/ }
-    .chart-circle [type="checkbox"] + label {
-      display: none;
-      position: absolute;
-      left: 50%;
-      z-index: 2;
-      margin: -60px 0 0;
-      padding: 0 20px;
-      line-height: 50px;
-      font-family: "Lato", sans-serif;
-      color: #fff;
-      text-transform: uppercase;
-      /*background: $chart-green;*/
-      cursor: pointer;
-      transform: translateX(-50%) translateY(-50%); }
-      .chart-circle [type="checkbox"] + label:before {
-        content: 'start'; }
-  .chart-circle .completed:before, .chart-circle .completed:after {
-    box-shadow: inset 0 0 0px 10px #cacaca; }
-  .chart-circle.blue-color .active .completed:before, .chart-circle.blue-color .active .completed:after {
-    box-shadow: inset 0 0 0px 10px #30bae7; }
-  .chart-circle.pink-color .active .completed:before, .chart-circle.pink-color .active .completed:after {
-    box-shadow: inset 0 0 0px 10px #d74680; }
-  .chart-circle.green-color .active .completed:before, .chart-circle.green-color .active .completed:after {
-    box-shadow: inset 0 0 0px 10px #15c7a8; }
-  .chart-circle.orange-color .active .completed:before, .chart-circle.orange-color .active .completed:after {
-    box-shadow: inset 0 0 0px 10px #eb7d4b; }
-
-/* ------------------------------------------------------------ *	Skill
-\* ------------------------------------------------------------ */
-.skill {
-  text-align: center; }
-  .skill h4 {
-    text-transform: uppercase; }
-
-@media (max-width: 480px) {
-  .skill {
-    padding-bottom: 40px; } }
-
-/* ------------------------------------------------------------ *	Tabs
-\* ------------------------------------------------------------ */
-.tabs-nav {
-  padding-top: 44px;
-  font-size: 18px;
-  line-height: 1.55;
-  text-transform: uppercase; }
-  .tabs-nav li {
-    display: inline-block;
-    padding-left: 6px; }
-    .tabs-nav li:first-child {
-      padding-left: 0; }
-    .tabs-nav li a {
-      display: block;
-      padding: 5px 23px;
-      background: #ebc985;
-      border-radius: 3px; }
-    .tabs-nav li a:hover,
-    .tabs-nav li.current a {
-      text-decoration: none;
-      background: #ffffff; }
-
-@media (max-width: 768px) {
-  .tabs-nav {
-    font-size: 12px;
-    padding-top: 30px; } }
-
-@media (max-width: 767px) {
-  .tabs-nav li a {
-    padding: 5px 19px; } }
-
-/* ------------------------------------------------------------ *	Article
-\* ------------------------------------------------------------ */
-.article {
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 400;
-  padding-bottom: 58px;
-  font-size: 18px; }
-  .article a {
-    color: #393939;
-    text-decoration: none;
+  font-family: "candara-reg", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.36; }
+  .service .service-head,
+  .service .service-body {
+    padding: 0 25px; }
+  .service p {
+    padding-bottom: 10px; }
+  .service .service-head img {
     display: block;
-    -webkit-transition: all 0.4s;
-    o-transition: all 0.4s;
-    transition: all 0.4s; }
-    .article a img {
-      display: block;
-      max-width: 100%;
-      padding-bottom: 24px; }
-    .article a strong {
-      font-weight: 400; }
-    .article a:hover {
-      color: #17c2a4;
-      text-decoration: none; }
-
-@media (max-width: 992px) {
-  .article {
-    width: 100%;
-    text-align: center; }
-    .article a img {
-      display: block;
-      margin: 0 auto; } }
-
-@media (max-width: 767px) {
-  .article {
-    font-size: 16px; } }
-
-/* ------------------------------------------------------------ *	Testimonail
-\* ------------------------------------------------------------ */
-.testimonial {
-  font-size: 21px;
-  line-height: 1.5;
-  padding-bottom: 144px; }
-  .testimonial .testimonial-img {
-    float: left;
-    padding-right: 48px; }
-    .testimonial .testimonial-img img {
-      display: block;
-      width: 96px;
-      height: 96px;
-      border-radius: 50%; }
-  .testimonial .testimonial-cnt {
-    height: 100%;
-    overflow: hidden;
-    padding-right: 36px; }
-    .testimonial .testimonial-cnt blockquote {
-      border: 0;
-      padding: 0 0 14px;
-      margin: 0;
-      font-style: italic; }
-      .testimonial .testimonial-cnt blockquote p {
-        font-size: 21px;
-        line-height: 1.5;
-        padding-bottom: 8px;
-        letter-spacing: 0.02em; }
-    .testimonial .testimonial-cnt h4 {
-      font-weight: 700;
-      text-transform: uppercase;
-      padding: 0;
-      margin: 0; }
-    .testimonial .testimonial-cnt h6 {
-      font-weight: 400;
-      color: #ffdd99;
-      font-size: 18px;
-      line-height: 1.44; }
-
-@media (max-width: 1200px) {
-  .testimonial {
-    padding-bottom: 70px; }
-    .testimonial .testimonial-img {
-      padding-right: 20px; }
-    .testimonial .testimonial-cnt {
-      padding-right: 20px; } }
-
-@media (max-width: 992px) {
-  .testimonial .testimonial-cnt {
-    padding-right: 0; }
-    .testimonial .testimonial-cnt blockquote p {
-      font-size: 18px; } }
-
-@media (max-width: 767px) {
-  .testimonial .testimonial-cnt {
-    overflow: visible;
-    height: auto; } }
+    margin: 0 auto 10px; }
+  .service .service-head h3 {
+    padding-bottom: 6px;
+    font-family: "myriadpro-bold", Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.5; }
+  .service .service-body a {
+    color: #826251;
+    font-family: "myriadpro-sboldit", Arial, sans-serif;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 1.5; }
+    .service .service-body a:hover {
+      text-decoration: underline; }
 
 /* ------------------------------------------------------------ *	Navigaton
 \* ------------------------------------------------------------ */
 .navigation {
-  color: #ffffff;
-  font-size: 16px;
-  text-transform: uppercase;
-  line-height: 2;
-  padding-top: 5px; }
+  padding-right: 43px; }
   .navigation ul {
-    list-style-type: none;
-    float: right; }
+    float: right;
+    border-radius: 25px;
+    line-height: 50px;
+    overflow: hidden;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.08); }
     .navigation ul li {
       float: left;
-      padding-left: 13px; }
-      .navigation ul li a,
-      .navigation ul li a:focus {
+      border-left: 1px solid #e6e6e6; }
+      .navigation ul li a {
         display: block;
-        padding: 0 16px;
-        border-radius: 3px;
+        font-size: 10px;
+        text-transform: uppercase;
+        color: #9d9c9c;
         text-decoration: none;
-        color: #ffffff; }
-        .navigation ul li a:hover,
-        .navigation ul li a:focus:hover {
-          background: rgba(0, 0, 0, 0.3);
-          text-decoration: none; }
+        background: #fff;
+        padding: 0 28px;
+        transition: background-color 0.2s; }
+        .navigation ul li a:hover {
+          text-decoration: none;
+          background-color: #845f51;
+          color: #fff; }
+      .navigation ul li:first-child {
+        border-left: 0; }
+        .navigation ul li:first-child a {
+          background: #fff url(../css/images/home-icon.png) no-repeat center center;
+          width: 81px;
+          height: 50px;
+          font-size: 0;
+          line-height: 0;
+          text-indent: -4004px; }
       .navigation ul li.current a {
-        background: rgba(0, 0, 0, 0.3);
-        text-decoration: none; }
-  .navigation .con {
-    cursor: pointer;
-    display: inline-block;
-    width: auto;
-    margin: 0 auto;
-    -webkit-transition: all .7s ease;
-    -moz-transition: all .7s eas7e;
-    -ms-transition: all .7s ease;
-    -o-transition: all .7s ease;
-    transition: all .7s ease;
-    display: none;
-    position: relative;
-    margin-top: -14px; }
-    .navigation .con .bar {
-      display: block;
-      height: 5px;
-      width: 40px;
-      background: #fff;
-      margin: 10px auto;
-      -webkit-transition: all .7s ease;
-      -moz-transition: all .7s ease;
-      -ms-transition: all 7s ease;
-      -o-transition: all .7s ease;
-      transition: all .7s ease; }
-      .navigation .con .bar .middle {
-        margin: 0 auto; }
-    .navigation .con.active .top {
-      -webkit-transform: translateY(15px) rotateZ(45deg);
-      -moz-transform: translateY(15px) rotateZ(45deg);
-      -ms-transform: translateY(15px) rotateZ(45deg);
-      -o-transform: translateY(15px) rotateZ(45deg);
-      transform: translateY(15px) rotateZ(45deg); }
-    .navigation .con.active .bottom {
-      -webkit-transform: translateY(-15px) rotateZ(-45deg);
-      -moz-transform: translateY(-15px) rotateZ(-45deg);
-      -ms-transform: translateY(-15px) rotateZ(-45deg);
-      -o-transform: translateY(-15px) rotateZ(-45deg);
-      transform: translateY(-15px) rotateZ(-45deg); }
-    .navigation .con.active .middle {
-      width: 0; }
+        background-color: #845f51;
+        color: #fff; }
 
-@media (max-width: 1200px) {
-  .navigation {
-    font-size: 13px; }
-    .navigation ul li a:focus,
-    .navigation ul li a:hover {
-      background: transparent; } }
+/* ------------------------------------------------------------ *	fonts
+\* ------------------------------------------------------------ */
+@font-face {
+  font-family: "lucida-sans";
+  font-weight: regular;
+  src: url("fonts/lucida-sans.eot?") format("eot"), url("fonts/lucida-sans.woff2") format("woff2"), url("fonts/lucida-sans.woff") format("woff"), url("fonts/lucida-sans.ttf") format("truetype"), url("fonts/lucida-sans.svg#lucida-sans") format("svg"); }
 
-@media (max-width: 992px) {
-  .navigation ul li {
-    padding-left: 3px; }
-    .navigation ul li a {
-      padding: 0 10px; } }
+@font-face {
+  font-family: "candara";
+  font-weight: regular;
+  src: url("fonts/Candara-reg.eot?") format("eot"), url("fonts/Candara-reg.woff2") format("woff2"), url("fonts/Candara-reg.woff") format("woff"), url("fonts/Candara-reg.ttf") format("truetype"), url("fonts/Candara-reg.svg#candara") format("svg"); }
 
-@media (max-width: 767px) {
-  .navigation {
-    font-size: 16px; }
-    .navigation .con {
-      display: block; }
-    .navigation ul {
-      max-height: 0;
-      position: fixed;
-      top: 68px;
-      left: 0;
-      right: 0;
-      width: 100%;
-      -webkit-transform: perspective(400) rotate3d(1, 0, 0, -90deg);
-      -webkit-transform-origin: 50% 0;
-      -webkit-transition: 350ms;
-      -moz-transition: 350ms;
-      -o-transition: 350ms;
-      transition: 350ms;
-      overflow: auto;
-      bottom: 0; }
-      .navigation ul li {
-        float: none;
-        display: block;
-        border-top: 1px solid #fff;
-        text-align: right;
-        background: rgba(0, 0, 0, 0.7); }
-        .navigation ul li a,
-        .navigation ul li a:focus {
-          padding: 10px 20px; }
-        .navigation ul li.current a {
-          background: rgba(0, 0, 0, 0.5); }
-    .navigation.active ul {
-      max-height: 1000px;
-      -webkit-transform: perspective(400) rotate3d(0, 0, 0, 0); } }
+@font-face {
+  font-family: "myriadpro-bold";
+  font-weight: bold;
+  src: url("fonts/MyriadPro-Bold.eot?") format("eot"), url("fonts/MyriadPro-Bold.woff2") format("woff2"), url("fonts/MyriadPro-Bold.woff") format("woff"), url("fonts/MyriadPro-Bold.ttf") format("truetype"), url("fonts/MyriadPro-Bold.svg#myriadpro-bold") format("svg"); }
+
+@font-face {
+  font-family: "myriadpro-boldit";
+  font-style: italic;
+  font-weight: bold;
+  src: url("fonts/MyriadPro-BoldIt.eot?") format("eot"), url("fonts/MyriadPro-BoldIt.woff2") format("woff2"), url("fonts/MyriadPro-BoldIt.woff") format("woff"), url("fonts/MyriadPro-BoldIt.ttf") format("truetype"), url("fonts/MyriadPro-BoldIt.svg#myriadpro-boldit") format("svg"); }
+
+@font-face {
+  font-family: "myriadpro-it";
+  font-style: italic;
+  font-weight: regular;
+  src: url("fonts/MyriadPro-It.eot?") format("eot"), url("fonts/MyriadPro-It.woff2") format("woff2"), url("fonts/MyriadPro-It.woff") format("woff"), url("fonts/MyriadPro-It.ttf") format("truetype"), url("fonts/MyriadPro-It.svg#myriadpro-it") format("svg"); }
+
+@font-face {
+  font-family: "myriadpro-reg";
+  font-weight: regular;
+  src: url("fonts/MyriadPro-Regular.eot?") format("eot"), url("fonts/MyriadPro-Regular.woff2") format("woff2"), url("fonts/MyriadPro-Regular.woff") format("woff"), url("fonts/MyriadPro-Regular.ttf") format("truetype"), url("fonts/MyriadPro-Regular.svg#myriadpro-reg") format("svg"); }
+
+@font-face {
+  font-family: "myriadpro-sbold";
+  font-weight: 600;
+  src: url("fonts/MyriadPro-Semibold.eot?") format("eot"), url("fonts/MyriadPro-Semibold.woff2") format("woff2"), url("fonts/MyriadPro-Semibold.woff") format("woff"), url("fonts/MyriadPro-Semibold.ttf") format("truetype"), url("fonts/MyriadPro-Semibold.svg#myriadpro-sbold") format("svg"); }
+
+@font-face {
+  font-family: "myriadpro-sboldit";
+  font-style: italic;
+  font-weight: 600;
+  src: url("fonts/MyriadPro-SemiboldIt.eot?") format("eot"), url("fonts/MyriadPro-SemiboldIt.woff2") format("woff2"), url("fonts/MyriadPro-SemiboldIt.woff") format("woff"), url("fonts/MyriadPro-SemiboldIt.ttf") format("truetype"), url("fonts/MyriadPro-SemiboldIt.svg#myriadpro-sboldit") format("svg"); }
 
 /*!
  *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome

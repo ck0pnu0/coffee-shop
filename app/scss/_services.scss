@@ -1,0 +1,34 @@
+/* ------------------------------------------------------------ *\
+	Services
+\* ------------------------------------------------------------ */
+
+.service {
+	text-align: center; font-family: $candara; font-size: 14px; line-height: 1.36; 
+
+	& .service-head,
+	& .service-body {
+		padding: 0 25px; 
+	}
+
+	& p {
+		padding-bottom: 10px;
+	}
+
+	& .service-head {
+		& img {
+			display: block; margin: 0 auto 10px;
+		}
+
+		& h3 {
+			padding-bottom: 6px; font-family: $myriadpro-bold;  text-transform: uppercase; font-size: 16px; line-height: 1.5; 
+		}
+	}
+
+	& .service-body a {
+		color: $color-brown; font-family: $myriadpro-sboldit; text-decoration: none; font-size: 12px; line-height: 1.5; 
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
