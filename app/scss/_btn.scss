@@ -2,3 +2,10 @@
 	Buttons
 \* ------------------------------------------------------------ */
 
+.btn {
+	background: $color-white; color: $color-brown; display: inline-block; padding: 6px 20px; font-size: 11px; line-height: 2.18; font-family: $myriadpro-sboldit; text-decoration: none; transition: opacity 0.3s; border-radius: 4px; box-shadow: 0px 2px 1px rgba(0,0,0,0.32);
+
+	&:hover {
+		text-decoration: none; opacity: 0.7;
+	}
+}

@@ -3,6 +3,10 @@
 \* ------------------------------------------------------------ */
 
 .section {
+
+	& .section-head {
+		text-align: center; 
+	}
 	
 	&.section-slider {
 		background: $overlay-grey; padding: 183px 0 63px; 
@@ -10,5 +14,33 @@
 
 	&.section-services {
 		padding: 120px 0; 
+	}
+
+	&.section-who {
+		background: $overlay-brown; font-family: $lucida; font-size: 11px; line-height: 2.18; color: $color-white; 
+
+		h4 {
+			padding-bottom: 16px; text-transform: uppercase; font-size: 14px; font-family: $myriadpro-bold; line-height: 1.71; color: $color-white; 
+		}
+
+		& p {
+			padding-bottom: 24px; 
+		}
+
+		& .section-cnt {
+			padding: 50px; 
+		}
+	}
+
+	&.section-gallery {
+		padding: 144px 0; 
+
+		& .section-head {
+			padding: 0 139px 25px; 
+		}
+
+		& .section-body {
+			padding: 0 39px; 
+		}
 	}
 }
