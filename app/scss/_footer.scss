@@ -3,5 +3,25 @@
 \* ------------------------------------------------------------ */
 
 .footer {
-	background: url(../css/images/footer-pattern.jpg) repeat 0 0; padding: 34px 0 70px; color: $color-white; 
+	background: url(../css/images/footer-pattern.jpg) repeat 0 0; padding: 34px 0 70px; color: $color-white; font-size: 12px; line-height: 2;  
+
+	& h5 {
+		font-size: 16px; line-height: 1.5; font-family: $myriadpro-bold; text-transform: uppercase; padding-bottom: 12px; 
+	}
+
+	& a {
+		color: $color-white; text-decoration: none; 
+
+		&:hover {
+			text-decoration: underline; 
+		} 
+	}
+
+	& blockquote p {
+		font-size: 12px; line-height: 2; font-family: $myriadpro-it; 
+
+		& span {
+			display: block; 
+		}
+	}
 }

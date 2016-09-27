@@ -5085,7 +5085,26 @@ img {
 .footer {
   background: url(../css/images/footer-pattern.jpg) repeat 0 0;
   padding: 34px 0 70px;
-  color: #fff; }
+  color: #fff;
+  font-size: 12px;
+  line-height: 2; }
+  .footer h5 {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "myriadpro-bold", Arial, sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 12px; }
+  .footer a {
+    color: #fff;
+    text-decoration: none; }
+    .footer a:hover {
+      text-decoration: underline; }
+  .footer blockquote p {
+    font-size: 12px;
+    line-height: 2;
+    font-family: "myriadpro-it", Arial, sans-serif; }
+    .footer blockquote p span {
+      display: block; }
 
 /* ------------------------------------------------------------ *	wrapper
 \* ------------------------------------------------------------ */
@@ -5125,6 +5144,20 @@ img {
     text-decoration: none;
     opacity: 0.7; }
 
+.scroll-top {
+  color: #845f51;
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #845f51;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px; }
+  .scroll-top:hover, .scroll-top:active, .scroll-top:focus {
+    color: #845f51; }
+
 /* ------------------------------------------------------------ *	Form
 \* ------------------------------------------------------------ */
 ::-webkit-input-placeholder {
@@ -5143,40 +5176,69 @@ img {
 
 /* ------------------------------------------------------------ *	Sections
 \* ------------------------------------------------------------ */
-.section .section-head {
-  text-align: center; }
-
-.section.section-slider {
-  background: #e8e8e8;
-  padding: 183px 0 63px; }
-
-.section.section-services {
-  padding: 120px 0; }
-
-.section.section-who {
-  background: #664735;
-  font-family: "lucida-sans", Arial, sans-serif;
-  font-size: 11px;
-  line-height: 2.18;
-  color: #fff; }
-  .section.section-who h4 {
-    padding-bottom: 16px;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-family: "myriadpro-bold", Arial, sans-serif;
-    line-height: 1.71;
+.section {
+  position: relative; }
+  .section .section-head {
+    text-align: center; }
+    .section .section-head h2,
+    .section .section-head p {
+      padding-bottom: 7px; }
+  .section.section-slider {
+    background: #e8e8e8;
+    padding: 183px 0 63px; }
+  .section.section-services {
+    padding: 120px 0; }
+  .section.section-who {
+    background: #664735;
+    font-family: "lucida-sans", Arial, sans-serif;
+    font-size: 11px;
+    line-height: 2.18;
     color: #fff; }
-  .section.section-who p {
-    padding-bottom: 24px; }
-  .section.section-who .section-cnt {
-    padding: 50px; }
-
-.section.section-gallery {
-  padding: 144px 0; }
-  .section.section-gallery .section-head {
-    padding: 0 139px 25px; }
-  .section.section-gallery .section-body {
-    padding: 0 39px; }
+    .section.section-who h4 {
+      padding-bottom: 16px;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-family: "myriadpro-bold", Arial, sans-serif;
+      line-height: 1.71;
+      color: #fff; }
+    .section.section-who p {
+      padding-bottom: 24px; }
+    .section.section-who .section-cnt {
+      padding: 50px;
+      float: right; }
+    .section.section-who .section-image {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 50%;
+      padding: 0; }
+      .section.section-who .section-image img {
+        display: block;
+        width: 100%;
+        max-height: 100%;
+        height: auto;
+        opacity: 0.7; }
+  .section.section-gallery {
+    padding: 144px 0; }
+    .section.section-gallery .section-head {
+      padding: 0 139px 25px; }
+    .section.section-gallery .section-body {
+      padding: 0 39px; }
+      .section.section-gallery .section-body:after {
+        content: "";
+        display: table;
+        clear: both; }
+      .section.section-gallery .section-body a {
+        float: left;
+        margin: 1px;
+        position: relative;
+        overflow: hidden; }
+        .section.section-gallery .section-body a img {
+          display: block;
+          width: 354px;
+          height: auto;
+          max-height: 230px; }
 
 /* ------------------------------------------------------------ *	Article
 \* ------------------------------------------------------------ */
@@ -5235,6 +5297,19 @@ img {
     line-height: 1.5; }
     .service .service-body a:hover {
       text-decoration: underline; }
+
+/* ------------------------------------------------------------ *	Socials
+\* ------------------------------------------------------------ */
+.socials {
+  font-size: 17px;
+  line-height: 1.5; }
+  .socials:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .socials a {
+    float: left;
+    margin: 0 5px; }
 
 /* ------------------------------------------------------------ *	Navigaton
 \* ------------------------------------------------------------ */

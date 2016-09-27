@@ -9,3 +9,13 @@
 		text-decoration: none; opacity: 0.7;
 	}
 }
+
+.scroll-top {
+	color: $overlay-brown-light; position: fixed; bottom: 100px; right: 100px; width: 30px; height: 30px; border: 1px solid $overlay-brown-light; border-radius: 50%; text-align: center; line-height: 30px; 
+
+	&:hover,
+	&:active,
+	&:focus {
+		color: $overlay-brown-light; 
+	}
+}

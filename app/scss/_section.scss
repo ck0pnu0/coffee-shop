@@ -4,8 +4,15 @@
 
 .section {
 
+	position: relative; 
+
 	& .section-head {
 		text-align: center; 
+
+		& h2,
+		& p {
+			padding-bottom: 7px; 
+		}
 	}
 	
 	&.section-slider {
@@ -28,7 +35,15 @@
 		}
 
 		& .section-cnt {
-			padding: 50px; 
+			padding: 50px; float: right; 
+		}
+
+		& .section-image {
+			position: absolute; top: 0; bottom: 0; left: 0; right: 50%; padding: 0;
+
+			& img {
+				display: block; width: 100%; max-height: 100%; height: auto; opacity: 0.7;
+			}
 		}
 	}
 
@@ -41,6 +56,16 @@
 
 		& .section-body {
 			padding: 0 39px; 
+
+			@include clearfix;
+
+			& a {
+				float: left; margin: 1px; position: relative; overflow: hidden; 
+
+				& img {
+					display: block; width: 354px; height: auto; max-height: 230px;  
+				}
+			}
 		}
 	}
 }
