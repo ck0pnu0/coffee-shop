@@ -5074,7 +5074,8 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  right: 0; }
+  right: 0;
+  z-index: 10; }
   .header:after {
     content: "";
     display: table;
@@ -5238,7 +5239,10 @@ img {
           display: block;
           width: 354px;
           height: auto;
-          max-height: 230px; }
+          max-height: 230px;
+          transition: all .3s ease-in-out; }
+          .section.section-gallery .section-body a img:hover {
+            transform: scale(1.1); }
 
 /* ------------------------------------------------------------ *	Article
 \* ------------------------------------------------------------ */

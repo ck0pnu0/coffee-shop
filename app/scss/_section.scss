@@ -63,7 +63,11 @@
 				float: left; margin: 1px; position: relative; overflow: hidden; 
 
 				& img {
-					display: block; width: 354px; height: auto; max-height: 230px;  
+					display: block; width: 354px; height: auto; max-height: 230px; transition: all .3s ease-in-out;
+
+					&:hover {
+						transform: scale(1.1);
+					}
 				}
 			}
 		}

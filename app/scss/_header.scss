@@ -3,7 +3,7 @@
 \* ------------------------------------------------------------ */
 
 .header {
-	border-top: 10px solid $overlay-brown; background: transparent; padding: 40px 0; position: absolute; top: 0; left: 0; right: 0;
+	border-top: 10px solid $overlay-brown; background: transparent; padding: 40px 0; position: absolute; top: 0; left: 0; right: 0; z-index: 10; 
 
 	@include clearfix;
 }
