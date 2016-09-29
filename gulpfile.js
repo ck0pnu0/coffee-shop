@@ -35,6 +35,8 @@ var gulp 				= require('gulp'),
 	concat 				= require('gulp-concat'),
 	uglify 				= require('gulp-uglify'),
 	rename 				= require('gulp-rename'),
+	spritesmith  		= require('gulp.spritesmith'),
+	stylus				= require('gulp-stylus'),
 	del 				= require('del');
 
 
@@ -107,6 +109,36 @@ gulp.task('sass', function () {
 
 
 // ////////////////////////////////////////////////
+// Gulp Sprite Generator
+// // /////////////////////////////////////////////
+gulp.task('stylus', function() {
+    return gulp.src('./app/css/style.styl')
+        .pipe(stylus({
+            compress: true
+        }))
+        .pipe(gulp.dest('./built/css'));
+});
+
+gulp.task('sprite', function() {
+    var spriteData = 
+        gulp.src('./app/css/images/sprites/*.*') // путь, откуда берем картинки для спрайта
+            .pipe(spritesmith({
+                imgName: 'sprite.png',
+                cssName: 'sprite.styl',
+                cssFormat: 'stylus',
+                algorithm: 'binary-tree',
+                cssTemplate: 'stylus.template.mustache',
+                cssVarMap: function(sprite) {
+                    sprite.name = 's-' + sprite.name
+                }
+            }));
+
+    spriteData.img.pipe(gulp.dest('./build/css/images/')); // путь, куда сохраняем картинку
+    spriteData.css.pipe(gulp.dest('./app/css/')); // путь, куда сохраняем стили
+});
+
+
+// ////////////////////////////////////////////////
 // HTML Tasks
 // // /////////////////////////////////////////////
 
@@ -172,10 +204,12 @@ gulp.task ('watch', function(){
 	gulp.watch('app/scss/**/*.scss', ['sass']);
 	gulp.watch('app/js/**/*.js', ['scripts']);
   	gulp.watch('app/**/*.html', ['html']);
+  	gulp.watch('./app/css/**/*.styl', ['stylus']);
+    gulp.watch('./app/css/images/sprites/*.*', ['sprite']);
 });
 
 
-gulp.task('default', ['scripts', 'sass', 'html', 'browser-sync', 'watch']);
+gulp.task('default', ['scripts', 'sass', 'html', 'sprite', 'stylus', 'browser-sync', 'watch']);
 
 
 // Helpers
