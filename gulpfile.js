@@ -112,23 +112,23 @@ gulp.task('sass', function () {
 // Gulp Sprite Generator
 // // /////////////////////////////////////////////
 
-gulp.task('clean:sprite', function () {
-  return del([
-    // 'dist/report.csv',
-    // here we use a globbing pattern to match everything inside the `mobile` folder
-    'app/scss/_sprite.scss',
-    'app/css/images/sprite.png'
-    // we don't want to clean this file though so we negate the pattern
-    // '!dist/mobile/deploy.json'
-  ]);
-});
+// gulp.task('clean:sprite', function () {
+//   return del([
+//     // 'dist/report.csv',
+//     // here we use a globbing pattern to match everything inside the `mobile` folder
+//     'app/css/sprite.css',
+//     'app/css/images/sprite.png'
+//     // we don't want to clean this file though so we negate the pattern
+//     // '!dist/mobile/deploy.json'
+//   ]);
+// });
 
 gulp.task('stylus', function() {	
-    return gulp.src('./app/scss/_sprite.scss')
+    return gulp.src('./app/scss/sprite.css')
         .pipe(stylus({
             compress: true            
         }))
-        .pipe(gulp.dest('./app/scss'));
+        .pipe(gulp.dest('./app/css'));
 });
 
 gulp.task('sprite', function() {
@@ -136,8 +136,8 @@ gulp.task('sprite', function() {
         gulp.src('./app/css/images/sprites/*.*') // путь, откуда берем картинки для спрайта
             .pipe(spritesmith({
                 imgName: 'sprite.png',
-                cssName: '_sprite.scss',
-                cssFormat: 'scss',
+                cssName: 'sprite.css',
+                cssFormat: 'css',
                 algorithm: 'binary-tree',
                 padding: 5,
                 //cssTemplate: 'stylus.template.mustache',
@@ -147,7 +147,7 @@ gulp.task('sprite', function() {
             }));
 
     spriteData.img.pipe(gulp.dest('./app/css/images/')); // путь, куда сохраняем картинку
-    spriteData.css.pipe(gulp.dest('./app/scss/')); // путь, куда сохраняем стили
+    spriteData.css.pipe(gulp.dest('./app/css/')); // путь, куда сохраняем стили
 });
 
 
@@ -222,7 +222,7 @@ gulp.task ('watch', function(){
 });
 
 
-gulp.task('default', ['scripts', 'sass', 'html', 'clean:sprite', 'sprite', 'stylus', 'browser-sync', 'watch']);
+gulp.task('default', ['scripts', 'sass', 'html', 'sprite', 'stylus', 'browser-sync', 'watch']);
 
 
 // Helpers

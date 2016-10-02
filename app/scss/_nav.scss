@@ -19,7 +19,7 @@
 				} 
 
 				& .icon-home {
-					width: $s-home-icon-width; height: $s-home-icon-height; background-image: url(../css/images/sprite.png); background-position: $s-home-icon-offset-x $s-home-icon-offset-y; background-size: $s-home-icon-total-width $s-home-icon-total-height; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+					width: 16px; height: 17px; background-image: url(../css/images/sprite.png); position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-position: 0px -26px; 
 				}
 			}
 
@@ -37,7 +37,7 @@
 
 			&.current a .icon-home,
 			& a:hover .icon-home {
-				background-position: $s-home-icon-white-offset-x $s-home-icon-white-offset-y; 
+				background-position: -38px 0px;
 			}
 		} 
 	}
