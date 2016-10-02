@@ -5186,7 +5186,8 @@ img {
       padding-bottom: 7px; }
   .section.section-slider {
     background: #e8e8e8;
-    padding: 183px 0 63px; }
+    padding: 183px 0 63px;
+    min-height: 180px; }
   .section.section-services {
     padding: 120px 0; }
   .section.section-who {
@@ -5240,37 +5241,67 @@ img {
           width: 354px;
           height: auto;
           max-height: 230px;
-          transition: all .3s ease-in-out; }
+          transition: all .3s ease-in-out;
+          opacity: 0.9; }
           .section.section-gallery .section-body a img:hover {
-            transform: scale(1.1); }
+            transform: scale(1.1);
+            opacity: 1; }
 
 /* ------------------------------------------------------------ *	Article
 \* ------------------------------------------------------------ */
 /* ------------------------------------------------------------ *	slider
 \* ------------------------------------------------------------ */
-.slider {
-  font-size: 13px;
-  line-height: 1.62; }
-  .slider h2 {
-    font-family: "myriadpro-bold", Arial, sans-serif;
-    font-size: 18px;
-    line-height: 1.2;
-    text-transform: uppercase;
-    font-color: #9d9c9c;
-    padding-bottom: 6px; }
-  .slider p {
-    padding-bottom: 6px; }
-  .slider .slider-img img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%; }
-  .slider .slider-cnt {
-    padding-left: 120px; }
-    .slider .slider-cnt a.read-more {
-      color: #6f6d6d;
-      font-family: "myriadpro-sboldit", Arial, sans-serif; }
-      .slider .slider-cnt a.read-more:hover {
-        text-decoration: underline; }
+.slider-holder {
+  opacity: 0;
+  visibility: hidden;
+  min-height: 180px; }
+  .slider-holder .slider {
+    font-size: 13px;
+    line-height: 1.62;
+    position: relative; }
+    .slider-holder .slider h2 {
+      font-family: "myriadpro-bold", Arial, sans-serif;
+      font-size: 18px;
+      line-height: 1.2;
+      text-transform: uppercase;
+      font-color: #9d9c9c;
+      padding-bottom: 6px; }
+    .slider-holder .slider p {
+      padding-bottom: 6px; }
+    .slider-holder .slider .slider-img img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%; }
+    .slider-holder .slider .slider-cnt {
+      padding-left: 120px; }
+      .slider-holder .slider .slider-cnt a.read-more {
+        color: #6f6d6d;
+        font-family: "myriadpro-sboldit", Arial, sans-serif; }
+        .slider-holder .slider .slider-cnt a.read-more:hover {
+          text-decoration: underline; }
+    .slider-holder .slider .flex-direction-nav a.flex-prev,
+    .slider-holder .slider .flex-direction-nav a.flex-next {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      font-size: 0;
+      line-height: 0;
+      text-indent: -4004px;
+      transition: opacity 0.2s;
+      background-image: url(../css/images/sprite.png);
+      background-position: 0px 0px;
+      width: 14px;
+      height: 21px; }
+      .slider-holder .slider .flex-direction-nav a.flex-prev:hover,
+      .slider-holder .slider .flex-direction-nav a.flex-next:hover {
+        opacity: 0.7; }
+    .slider-holder .slider .flex-direction-nav a.flex-next {
+      background-position: -19px 0px;
+      width: 14px;
+      height: 21px;
+      left: auto;
+      right: 0; }
 
 /* ------------------------------------------------------------ *	Services
 \* ------------------------------------------------------------ */
@@ -5314,6 +5345,14 @@ img {
   .socials a {
     float: left;
     margin: 0 5px; }
+    .socials a:hover .fa-facebook {
+      color: #3A589B; }
+    .socials a:hover .fa-twitter {
+      color: #42C0FB; }
+    .socials a:hover .fa-dribbble {
+      color: #222; }
+    .socials a:hover .fa-behance {
+      color: #EC4A89; }
 
 /* ------------------------------------------------------------ *	Navigaton
 \* ------------------------------------------------------------ */
@@ -5336,68 +5375,77 @@ img {
         text-decoration: none;
         background: #fff;
         padding: 0 28px;
-        transition: background-color 0.2s; }
+        transition: background-color 0.2s;
+        position: relative; }
         .navigation ul li a:hover {
           text-decoration: none;
           background-color: #845f51;
           color: #fff; }
+        .navigation ul li a .icon-home {
+          width: 16px;
+          height: 17px;
+          background-image: url(../css/images/sprite.png);
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-position: 0px -26px; }
       .navigation ul li:first-child {
         border-left: 0; }
         .navigation ul li:first-child a {
-          background: #fff url(../css/images/home-icon.png) no-repeat center center;
           width: 81px;
-          height: 50px;
-          font-size: 0;
-          line-height: 0;
-          text-indent: -4004px; }
+          height: 50px; }
       .navigation ul li.current a {
         background-color: #845f51;
         color: #fff; }
+      .navigation ul li.current a .icon-home,
+      .navigation ul li a:hover .icon-home {
+        background-position: -38px 0px; }
 
 /* ------------------------------------------------------------ *	fonts
 \* ------------------------------------------------------------ */
 @font-face {
   font-family: "lucida-sans";
   font-weight: regular;
-  src: url("fonts/lucida-sans.eot?") format("eot"), url("fonts/lucida-sans.woff2") format("woff2"), url("fonts/lucida-sans.woff") format("woff"), url("fonts/lucida-sans.ttf") format("truetype"), url("fonts/lucida-sans.svg#lucida-sans") format("svg"); }
+  src: url("fonts/lucida-sans.eot?") format("eot"), url("fonts/lucida-sans.woff") format("woff"), url("fonts/lucida-sans.ttf") format("truetype"), url("fonts/lucida-sans.svg#lucida-sans") format("svg"); }
 
 @font-face {
   font-family: "candara";
   font-weight: regular;
-  src: url("fonts/Candara-reg.eot?") format("eot"), url("fonts/Candara-reg.woff2") format("woff2"), url("fonts/Candara-reg.woff") format("woff"), url("fonts/Candara-reg.ttf") format("truetype"), url("fonts/Candara-reg.svg#candara") format("svg"); }
+  src: url("fonts/Candara-reg.eot?") format("eot"), url("fonts/Candara-reg.woff") format("woff"), url("fonts/Candara-reg.ttf") format("truetype"), url("fonts/Candara-reg.svg#candara") format("svg"); }
 
 @font-face {
   font-family: "myriadpro-bold";
   font-weight: bold;
-  src: url("fonts/MyriadPro-Bold.eot?") format("eot"), url("fonts/MyriadPro-Bold.woff2") format("woff2"), url("fonts/MyriadPro-Bold.woff") format("woff"), url("fonts/MyriadPro-Bold.ttf") format("truetype"), url("fonts/MyriadPro-Bold.svg#myriadpro-bold") format("svg"); }
+  src: url("fonts/MyriadPro-Bold.eot?") format("eot"), url("fonts/MyriadPro-Bold.woff") format("woff"), url("fonts/MyriadPro-Bold.ttf") format("truetype"), url("fonts/MyriadPro-Bold.svg#myriadpro-bold") format("svg"); }
 
 @font-face {
   font-family: "myriadpro-boldit";
   font-style: italic;
   font-weight: bold;
-  src: url("fonts/MyriadPro-BoldIt.eot?") format("eot"), url("fonts/MyriadPro-BoldIt.woff2") format("woff2"), url("fonts/MyriadPro-BoldIt.woff") format("woff"), url("fonts/MyriadPro-BoldIt.ttf") format("truetype"), url("fonts/MyriadPro-BoldIt.svg#myriadpro-boldit") format("svg"); }
+  src: url("fonts/MyriadPro-BoldIt.eot?") format("eot"), url("fonts/MyriadPro-BoldIt.woff") format("woff"), url("fonts/MyriadPro-BoldIt.ttf") format("truetype"), url("fonts/MyriadPro-BoldIt.svg#myriadpro-boldit") format("svg"); }
 
 @font-face {
   font-family: "myriadpro-it";
   font-style: italic;
   font-weight: regular;
-  src: url("fonts/MyriadPro-It.eot?") format("eot"), url("fonts/MyriadPro-It.woff2") format("woff2"), url("fonts/MyriadPro-It.woff") format("woff"), url("fonts/MyriadPro-It.ttf") format("truetype"), url("fonts/MyriadPro-It.svg#myriadpro-it") format("svg"); }
+  src: url("fonts/MyriadPro-It.eot?") format("eot"), url("fonts/MyriadPro-It.woff") format("woff"), url("fonts/MyriadPro-It.ttf") format("truetype"), url("fonts/MyriadPro-It.svg#myriadpro-it") format("svg"); }
 
 @font-face {
   font-family: "myriadpro-reg";
   font-weight: regular;
-  src: url("fonts/MyriadPro-Regular.eot?") format("eot"), url("fonts/MyriadPro-Regular.woff2") format("woff2"), url("fonts/MyriadPro-Regular.woff") format("woff"), url("fonts/MyriadPro-Regular.ttf") format("truetype"), url("fonts/MyriadPro-Regular.svg#myriadpro-reg") format("svg"); }
+  src: url("fonts/MyriadPro-Regular.eot?") format("eot"), url("fonts/MyriadPro-Regular.woff") format("woff"), url("fonts/MyriadPro-Regular.ttf") format("truetype"), url("fonts/MyriadPro-Regular.svg#myriadpro-reg") format("svg"); }
 
 @font-face {
   font-family: "myriadpro-sbold";
   font-weight: 600;
-  src: url("fonts/MyriadPro-Semibold.eot?") format("eot"), url("fonts/MyriadPro-Semibold.woff2") format("woff2"), url("fonts/MyriadPro-Semibold.woff") format("woff"), url("fonts/MyriadPro-Semibold.ttf") format("truetype"), url("fonts/MyriadPro-Semibold.svg#myriadpro-sbold") format("svg"); }
+  src: url("fonts/MyriadPro-Semibold.eot?") format("eot"), url("fonts/MyriadPro-Semibold.woff") format("woff"), url("fonts/MyriadPro-Semibold.ttf") format("truetype"), url("fonts/MyriadPro-Semibold.svg#myriadpro-sbold") format("svg"); }
 
 @font-face {
   font-family: "myriadpro-sboldit";
   font-style: italic;
   font-weight: 600;
-  src: url("fonts/MyriadPro-SemiboldIt.eot?") format("eot"), url("fonts/MyriadPro-SemiboldIt.woff2") format("woff2"), url("fonts/MyriadPro-SemiboldIt.woff") format("woff"), url("fonts/MyriadPro-SemiboldIt.ttf") format("truetype"), url("fonts/MyriadPro-SemiboldIt.svg#myriadpro-sboldit") format("svg"); }
+  src: url("fonts/MyriadPro-SemiboldIt.eot?") format("eot"), url("fonts/MyriadPro-SemiboldIt.woff") format("woff"), url("fonts/MyriadPro-SemiboldIt.ttf") format("truetype"), url("fonts/MyriadPro-SemiboldIt.svg#myriadpro-sboldit") format("svg"); }
 
 /*!
  *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome

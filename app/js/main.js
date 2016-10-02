@@ -12,23 +12,23 @@
 			}, 600);
 		});
 
-		//slider
-		var $slider = $('.slider');
-
-		$slider.flexslider({
-			animation: "slide",
-			slideshowSpeed: 5000,
-			animationSpeed: 600,
-			useCSS: false,
-			controlNav: false
-		});
-
-		$win.on('load', function() {
-			$slider.css({
-				'opacity': 1,
-				'visibility': 'visible'
+		$win.on('load', function() {		
+			//slider
+			$('.slider').flexslider({
+				animation: "slide",
+				slideshowSpeed: 5000,
+				animationSpeed: 600,
+				useCSS: false,
+				controlNav: false
 			});
-		});
+
+			setTimeout(function() {
+				$('.slider-holder').css({
+					'opacity': 1,
+					'visibility': 'visible'
+				}, 100);
+			}, 100);
+		});		
 	});
 
 })(jQuery, window, document);

@@ -1,44 +1,47 @@
 /* ------------------------------------------------------------ *\
 	slider
 \* ------------------------------------------------------------ */
+.slider-holder {
+	opacity: 0; visibility: hidden; min-height: 180px;
 
-.slider {
-	font-size: 13px; line-height: 1.62; opacity: 0; visibility: hidden; transition: opacity 0.3s, visibility 0.3s; position: relative; 	
+	.slider {
+		font-size: 13px; line-height: 1.62; position: relative; 
 
-	& h2 {
-		font-family: $myriadpro-bold; font-size: 18px; line-height: 1.2;  text-transform: uppercase; font-color: $base-color; padding-bottom: 6px; 
-	}
+		& h2 {
+			font-family: $myriadpro-bold; font-size: 18px; line-height: 1.2;  text-transform: uppercase; font-color: $base-color; padding-bottom: 6px; 
+		}
 
-	& p {
-		padding-bottom: 6px; 
-	}
+		& p {
+			padding-bottom: 6px; 
+		}
 
-	& .slider-img img {
-		display: block; margin: 0 auto; max-width: 100%;
-	}
+		& .slider-img img {
+			display: block; margin: 0 auto; max-width: 100%;
+		}
 
-	& .slider-cnt {
-		padding-left: 120px; 
+		& .slider-cnt {
+			padding-left: 120px; 
 
-		& a.read-more {
-			color: $color-grey-dark; font-family: $myriadpro-sboldit; 
+			& a.read-more {
+				color: $color-grey-dark; font-family: $myriadpro-sboldit; 
 
-			&:hover {
-				text-decoration: underline; 
+				&:hover {
+					text-decoration: underline; 
+				}
 			}
 		}
-	}
 
-	& .flex-direction-nav a.flex-prev,
-	& .flex-direction-nav a.flex-next {
-		position: absolute; top: 50%; left: 0; transform: translateY(-50%); font-size: 0; line-height: 0; text-indent: -4004px; transition: opacity 0.2s; background-image: url(../css/images/sprite.png); background-position: 0px 0px; width: 14px; height: 21px;
+		& .flex-direction-nav a.flex-prev,
+		& .flex-direction-nav a.flex-next {
+			position: absolute; top: 50%; left: 0; transform: translateY(-50%); font-size: 0; line-height: 0; text-indent: -4004px; transition: opacity 0.2s; background-image: url(../css/images/sprite.png); background-position: 0px 0px; width: 14px; height: 21px;
 
-		&:hover {
-			opacity: 0.7;
+			&:hover {
+				opacity: 0.7;
+			}
 		}
-	}
 
-	& .flex-direction-nav a.flex-next {
-		background-position: -19px 0px; width: 14px; height: 21px; left: auto; right: 0;
+		& .flex-direction-nav a.flex-next {
+			background-position: -19px 0px; width: 14px; height: 21px; left: auto; right: 0;
+		}
 	}
 }

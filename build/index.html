@@ -10,6 +10,7 @@
     
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/sprite.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -27,7 +28,9 @@
                         <nav class="navigation">
                             <ul>
                                 <li>
-                                    <a href="#">Home</a>
+                                    <a href="#">
+                                        <div class="icon-home"></div>
+                                    </a>
                                 </li>
                                 
                                 <li>
@@ -56,27 +59,47 @@
             <section class="section section-slider">
                 <div class="container">
                     <div class="row">
-                        <div class="slider">
-                            <ul class="slides">
-                                <li>
-                                    <div class="col-md-6">
-                                        <div class="slider-cnt">
-                                            <h2>WELCOME TO COFFEE CAFE</h2>
-                                            
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                                            
-                                            <a href="#" class="read-more">Read More</a>
-                                        </div><!-- /.slider-cnt -->
-                                    </div><!-- /.col-md-6 -->
+                        <div class="slider-holder">
+                            <div class="slider">
+                                <ul class="slides">
+                                    <li>
+                                        <div class="col-md-6">
+                                            <div class="slider-cnt">
+                                                <h2>WELCOME TO COFFEE CAFE</h2>
+                                                
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                                
+                                                <a href="#" class="read-more">Read More</a>
+                                            </div><!-- /.slider-cnt -->
+                                        </div><!-- /.col-md-6 -->
 
-                                    <div class="col-md-6">
-                                        <div class="slider-img">
-                                            <img src="css/images/temp/slider-img1.png" alt="" width="322" height="179">
-                                        </div><!-- /.slider-img -->
-                                    </div><!-- /.col-md-6 -->
-                                </li>
-                            </ul><!-- /.slides -->
-                        </div><!-- /.slider -->
+                                        <div class="col-md-6">
+                                            <div class="slider-img">
+                                                <img src="css/images/temp/slider-img1.png" alt="" width="322" height="179">
+                                            </div><!-- /.slider-img -->
+                                        </div><!-- /.col-md-6 -->
+                                    </li>
+
+                                    <li>
+                                        <div class="col-md-6">
+                                            <div class="slider-cnt">
+                                                <h2>WELCOME TO COFFEE CAFE</h2>
+                                                
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                                
+                                                <a href="#" class="read-more">Read More</a>
+                                            </div><!-- /.slider-cnt -->
+                                        </div><!-- /.col-md-6 -->
+
+                                        <div class="col-md-6">
+                                            <div class="slider-img">
+                                                <img src="css/images/temp/slider-img1.png" alt="" width="322" height="179">
+                                            </div><!-- /.slider-img -->
+                                        </div><!-- /.col-md-6 -->
+                                    </li>
+                                </ul><!-- /.slides -->
+                            </div><!-- /.slider -->
+                        </div><!-- /.slider-holder -->
                     </div><!-- /.row -->
                 </div><!-- /.container -->
             </section><!-- /.section section-section -->
@@ -212,7 +235,7 @@
                             <h5>TWITTER</h5>
 
                             <blockquote>
-                                <p>  @AddSpears  yes, there will be a major update to <br />the Ken before spring. Stay tuned!.yes, there will <br />be a major update to . <span>9 hours ago</span></p>
+                                <p>  <a href="#">@AddSpears</a> yes, there will be a major update to <br />the Ken before spring. Stay tuned!.yes, there will <br />be a major update to . <span>9 hours ago</span></p>
                             </blockquote>
                         </div><!-- /.col-md-4 -->
                         
@@ -254,6 +277,7 @@
     </div><!-- /.wrapper -->
 
     <script src="js/jquery-3.1.0.min.js"></script>    
+    <script src="js/jquery.flexslider-min.js"></script>
     <script src="js/app.min.js"></script>
 </body>
 </html>
