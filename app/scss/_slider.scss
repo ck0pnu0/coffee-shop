@@ -3,11 +3,7 @@
 \* ------------------------------------------------------------ */
 
 .slider {
-	font-size: 13px; line-height: 1.62; opacity: 0; visibility: hidden; transition: opacity 0.3s, visibility 0.3s; position: relative; 
-
-	&.loaded {
-		opacity: 1; visibility: visible; 
-	} 
+	font-size: 13px; line-height: 1.62; opacity: 0; visibility: hidden; transition: opacity 0.3s, visibility 0.3s; position: relative; 	
 
 	& h2 {
 		font-family: $myriadpro-bold; font-size: 18px; line-height: 1.2;  text-transform: uppercase; font-color: $base-color; padding-bottom: 6px; 

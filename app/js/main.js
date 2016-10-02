@@ -24,7 +24,10 @@
 		});
 
 		$win.on('load', function() {
-			$slider.addClass('loaded');
+			$slider.css({
+				'opacity': 1,
+				'visibility': 'visible'
+			});
 		});
 	});
 

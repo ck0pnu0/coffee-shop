@@ -111,11 +111,19 @@ gulp.task('sass', function () {
 // ////////////////////////////////////////////////
 // Gulp Sprite Generator
 // // /////////////////////////////////////////////
-gulp.task('stylus', function(cb) {
-	del([
-		'./app/scss/_sprite.scss'
-	], cb);
 
+gulp.task('clean:sprite', function () {
+  return del([
+    // 'dist/report.csv',
+    // here we use a globbing pattern to match everything inside the `mobile` folder
+    'app/scss/_sprite.scss',
+    'app/css/images/sprite.png'
+    // we don't want to clean this file though so we negate the pattern
+    // '!dist/mobile/deploy.json'
+  ]);
+});
+
+gulp.task('stylus', function() {	
     return gulp.src('./app/scss/_sprite.scss')
         .pipe(stylus({
             compress: true            
@@ -214,7 +222,7 @@ gulp.task ('watch', function(){
 });
 
 
-gulp.task('default', ['scripts', 'sass', 'html', 'sprite', 'stylus', 'browser-sync', 'watch']);
+gulp.task('default', ['scripts', 'sass', 'html', 'clean:sprite', 'sprite', 'stylus', 'browser-sync', 'watch']);
 
 
 // Helpers
