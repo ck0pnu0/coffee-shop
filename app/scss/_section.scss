@@ -63,10 +63,10 @@
 				float: left; margin: 1px; position: relative; overflow: hidden; 
 
 				& img {
-					display: block; width: 354px; height: auto; max-height: 230px; transition: all .3s ease-in-out;
+					display: block; width: 354px; height: auto; max-height: 230px; transition: all .3s ease-in-out; opacity: 0.9; 
 
 					&:hover {
-						transform: scale(1.1);
+						transform: scale(1.1); opacity: 1;
 					}
 				}
 			}

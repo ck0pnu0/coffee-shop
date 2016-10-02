@@ -11,6 +11,21 @@
 				scrollTop: 0
 			}, 600);
 		});
+
+		//slider
+		var $slider = $('.slider');
+
+		$slider.flexslider({
+			animation: "slide",
+			slideshowSpeed: 5000,
+			animationSpeed: 600,
+			useCSS: false,
+			controlNav: false
+		});
+
+		$win.on('load', function() {
+			$slider.addClass('loaded');
+		});
 	});
 
 })(jQuery, window, document);

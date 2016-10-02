@@ -111,12 +111,16 @@ gulp.task('sass', function () {
 // ////////////////////////////////////////////////
 // Gulp Sprite Generator
 // // /////////////////////////////////////////////
-gulp.task('stylus', function() {
-    return gulp.src('./app/css/style.styl')
+gulp.task('stylus', function(cb) {
+	del([
+		'./app/scss/_sprite.scss'
+	], cb);
+
+    return gulp.src('./app/scss/_sprite.scss')
         .pipe(stylus({
-            compress: true
+            compress: true            
         }))
-        .pipe(gulp.dest('./built/css'));
+        .pipe(gulp.dest('./app/scss'));
 });
 
 gulp.task('sprite', function() {
@@ -124,17 +128,18 @@ gulp.task('sprite', function() {
         gulp.src('./app/css/images/sprites/*.*') // путь, откуда берем картинки для спрайта
             .pipe(spritesmith({
                 imgName: 'sprite.png',
-                cssName: 'sprite.styl',
-                cssFormat: 'stylus',
+                cssName: '_sprite.scss',
+                cssFormat: 'scss',
                 algorithm: 'binary-tree',
-                cssTemplate: 'stylus.template.mustache',
+                padding: 5,
+                //cssTemplate: 'stylus.template.mustache',
                 cssVarMap: function(sprite) {
                     sprite.name = 's-' + sprite.name
                 }
             }));
 
-    spriteData.img.pipe(gulp.dest('./build/css/images/')); // путь, куда сохраняем картинку
-    spriteData.css.pipe(gulp.dest('./app/css/')); // путь, куда сохраняем стили
+    spriteData.img.pipe(gulp.dest('./app/css/images/')); // путь, куда сохраняем картинку
+    spriteData.css.pipe(gulp.dest('./app/scss/')); // путь, куда сохраняем стили
 });
 
 

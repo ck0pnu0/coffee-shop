@@ -12,23 +12,32 @@
 			float: left; border-left: 1px solid #e6e6e6;  			
 
 			& a {
-				display: block; font-size: 10px; text-transform: uppercase; color: $base-color; text-decoration: none; background: $color-white; padding: 0 28px; transition: background-color 0.2s;
+				display: block; font-size: 10px; text-transform: uppercase; color: $base-color; text-decoration: none; background: $color-white; padding: 0 28px; transition: background-color 0.2s; position: relative; 
 
 				&:hover {
 					text-decoration: none; background-color: $overlay-brown-light; color: $color-white;
 				} 
+
+				& .icon-home {
+					width: $s-home-icon-width; height: $s-home-icon-height; background-image: url(../css/images/sprite.png); background-position: $s-home-icon-offset-x $s-home-icon-offset-y; background-size: $s-home-icon-total-width $s-home-icon-total-height; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+				}
 			}
 
 			&:first-child {
 				border-left: 0; 
 
 				& a {
-					background: #fff url(../css/images/home-icon.png) no-repeat center center; width: 81px; height: 50px; font-size: 0; line-height: 0; text-indent: -4004px;
+					width: 81px; height: 50px; 					
 				}
 			}
 
 			&.current a {
 				background-color: $overlay-brown-light; color: $color-white;
+			}
+
+			&.current a .icon-home,
+			& a:hover .icon-home {
+				background-position: $s-home-icon-white-offset-x $s-home-icon-white-offset-y; 
 			}
 		} 
 	}

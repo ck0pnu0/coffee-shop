@@ -9,5 +9,21 @@
 
 	& a {
 		float: left; margin: 0 5px;
+
+		&:hover .fa-facebook {
+			color: #3A589B; 
+		}
+
+		&:hover .fa-twitter {
+			color: #42C0FB; 
+		}
+
+		&:hover .fa-dribbble {
+			color: #222; 
+		}
+
+		&:hover .fa-behance {
+			color: #EC4A89; 
+		}
 	}
 }
