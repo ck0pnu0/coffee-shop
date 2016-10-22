@@ -42,3 +42,9 @@
 		} 
 	}
 }
+
+@media (min-width: $screen-sm-min) {
+	.navigation {
+		padding: 0; 
+	}
+}

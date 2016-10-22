@@ -19,3 +19,9 @@
 		color: $overlay-brown-light; 
 	}
 }
+
+@media (min-width: $screen-sm-min) {
+	.scroll-top {
+		right: 10px;
+	}
+}

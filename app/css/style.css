@@ -5107,6 +5107,12 @@ img {
     .footer blockquote p span {
       display: block; }
 
+@media (min-width: 768px) {
+  .footer {
+    padding: 34px 0; }
+    .footer .col-sm-6 {
+      padding-bottom: 13px; } }
+
 /* ------------------------------------------------------------ *	wrapper
 \* ------------------------------------------------------------ */
 .wrapper {
@@ -5158,6 +5164,10 @@ img {
   line-height: 30px; }
   .scroll-top:hover, .scroll-top:active, .scroll-top:focus {
     color: #845f51; }
+
+@media (min-width: 768px) {
+  .scroll-top {
+    right: 10px; } }
 
 /* ------------------------------------------------------------ *	Form
 \* ------------------------------------------------------------ */
@@ -5226,14 +5236,17 @@ img {
     .section.section-gallery .section-head {
       padding: 0 139px 25px; }
     .section.section-gallery .section-body {
-      padding: 0 39px; }
+      padding: 0 39px;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      number: 3; }
       .section.section-gallery .section-body:after {
         content: "";
         display: table;
         clear: both; }
       .section.section-gallery .section-body a {
-        float: left;
-        margin: 1px;
+        margin: 5px auto;
         position: relative;
         overflow: hidden; }
         .section.section-gallery .section-body a img {
@@ -5246,6 +5259,20 @@ img {
           .section.section-gallery .section-body a img:hover {
             transform: scale(1.1);
             opacity: 1; }
+
+@media (min-width: 768px) {
+  .section.section-services, .section.section-gallery {
+    padding: 60px 0; }
+  .section.section-who {
+    background: url(images/temp/background.jpg) no-repeat 0 0;
+    -webkit-background-size: cover;
+    background-size: cover; }
+    .section.section-who .section-image {
+      display: none; }
+    .section.section-who .section-cnt {
+      float: none;
+      display: block;
+      width: auto; } }
 
 /* ------------------------------------------------------------ *	Article
 \* ------------------------------------------------------------ */
@@ -5302,6 +5329,10 @@ img {
       height: 21px;
       left: auto;
       right: 0; }
+
+@media (min-width: 768px) {
+  .slider-holder .slider .slider-cnt {
+    padding: 0 50px; } }
 
 /* ------------------------------------------------------------ *	Services
 \* ------------------------------------------------------------ */
@@ -5401,6 +5432,10 @@ img {
       .navigation ul li.current a .icon-home,
       .navigation ul li a:hover .icon-home {
         background-position: -38px 0px; }
+
+@media (min-width: 768px) {
+  .navigation {
+    padding: 0; } }
 
 /* ------------------------------------------------------------ *	fonts
 \* ------------------------------------------------------------ */

@@ -25,3 +25,13 @@
 		}
 	}
 }
+
+@media (min-width: $screen-sm-min) {
+	.footer { 
+		padding: 34px 0; 
+
+		& .col-sm-6 {
+			padding-bottom: 13px; 
+		}
+	}
+}

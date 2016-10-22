@@ -55,12 +55,12 @@
 		}
 
 		& .section-body {
-			padding: 0 39px; 
+			padding: 0 39px; display: flex; flex-flow: row wrap; align-items: center; number: 3;
 
 			@include clearfix;
 
 			& a {
-				float: left; margin: 1px; position: relative; overflow: hidden; 
+				margin: 5px auto; position: relative; overflow: hidden; 
 
 				& img {
 					display: block; width: 354px; height: auto; max-height: 230px; transition: all .3s ease-in-out; opacity: 0.9; 
@@ -69,6 +69,28 @@
 						transform: scale(1.1); opacity: 1;
 					}
 				}
+			}
+		}
+	}
+}
+
+@media (min-width: $screen-sm-min) {
+	.section {
+		
+		&.section-services,
+		&.section-gallery {
+			padding: 60px 0; 
+		}
+
+		&.section-who {
+			background: url(images/temp/background.jpg) no-repeat 0 0; -webkit-background-size: cover; background-size: cover; 
+
+			& .section-image {
+				display: none; 
+			}
+
+			& .section-cnt {
+				float: none; display: block; width: auto; 				
 			}
 		}
 	}

@@ -45,3 +45,11 @@
 		}
 	}
 }
+
+@media (min-width: $screen-sm-min) {
+	.slider-holder {
+		& .slider .slider-cnt {
+			padding: 0 50px;
+		}
+	}	
+}
