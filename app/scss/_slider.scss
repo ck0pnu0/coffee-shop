@@ -46,7 +46,7 @@
 	}
 }
 
-@media (min-width: $screen-sm-min) {
+@media (max-width: ($screen-sm-min)-1 ) {
 	.slider-holder {
 		& .slider .slider-cnt {
 			padding: 0 50px;

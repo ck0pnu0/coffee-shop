@@ -27,3 +27,11 @@
 		}
 	}
 }
+
+@media (max-width: ($screen-sm-min)-1 ) {
+	.socials {
+		& a {
+			float: none; display: inline-block; 
+		}
+	}
+}

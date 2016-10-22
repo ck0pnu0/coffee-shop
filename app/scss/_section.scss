@@ -74,7 +74,7 @@
 	}
 }
 
-@media (min-width: $screen-sm-min) {
+@media (max-width: ($screen-md-min)-1 ) {
 	.section {
 		
 		&.section-services,
@@ -92,6 +92,19 @@
 			& .section-cnt {
 				float: none; display: block; width: auto; 				
 			}
+		}
+	}
+}
+
+@media(max-width: ($screen-sm-min)-1 ){
+	.section {
+
+		&.section-slider {
+			padding: 60px 0; 
+		}
+
+		&.section-gallery .section-head {
+			padding-left: 60px; padding-right: 60px; 			 
 		}
 	}
 }

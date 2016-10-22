@@ -12,6 +12,13 @@
 			}, 600);
 		});
 
+		$('.menu-btn').on('click', function(e) {
+			e.preventDefault();
+
+			$(this).toggleClass('open');
+			$(this).parent().toggleClass('active');
+		});
+
 		$win.on('load', function() {		
 			//slider
 			$('.slider').flexslider({

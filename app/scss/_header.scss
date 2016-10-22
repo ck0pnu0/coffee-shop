@@ -7,3 +7,13 @@
 
 	@include clearfix;
 }
+
+@media (max-width: ($screen-sm-min)-1 ) {
+	.header {
+		padding: 10px 0; position: relative; 
+
+		& .col-xs-9 {
+			position: static; overflow: visible; 
+		}
+	}
+}

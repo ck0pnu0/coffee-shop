@@ -26,12 +26,20 @@
 	}
 }
 
-@media (min-width: $screen-sm-min) {
+@media (max-width: ($screen-sm-min)-1 ) {
 	.footer { 
 		padding: 34px 0; 
 
 		& .col-sm-6 {
 			padding-bottom: 13px; 
+		}
+
+		& .col-sm-3.col-xs-12 {
+			text-align: center;
+		}
+
+		& .twitter-box {
+			display: none; 
 		}
 	}
 }

@@ -32,3 +32,9 @@
 		}
 	}
 }
+
+@media (max-width: ($screen-sm-min)-1 ) {
+	.service {
+		padding-bottom: 20px; 
+	}
+}
