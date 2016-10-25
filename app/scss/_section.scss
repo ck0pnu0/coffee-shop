@@ -16,7 +16,7 @@
 	}
 	
 	&.section-slider {
-		background: $overlay-grey; padding: 183px 0 63px; min-height: 180px;
+		background: $overlay-grey; padding: 183px 0 63px; min-height: 180px; overflow: hidden;
 	}
 
 	&.section-services {

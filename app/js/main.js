@@ -19,22 +19,18 @@
 			$(this).parent().toggleClass('active');
 		});
 
-		$win.on('load', function() {		
-			//slider
-			$('.slider').flexslider({
-				animation: "slide",
-				slideshowSpeed: 5000,
-				animationSpeed: 600,
-				useCSS: false,
-				controlNav: false
-			});
-
-			setTimeout(function() {
-				$('.slider-holder').css({
-					'opacity': 1,
-					'visibility': 'visible'
-				}, 100);
-			}, 100);
+		//slider
+		var $slider = $('.slider');
+		$slider.flexslider({
+			animation: "slide",
+			slideshowSpeed: 5000,
+			animationSpeed: 600,
+			useCSS: false,
+			controlNav: false,
+			start: function(slider) {
+				$('.slider-holder').css({'opacity': 1, 'visibility': 'visible', '-webkit-backface-visibility': 'visible'});
+				slider.resize();
+			}
 		});		
 	});
 

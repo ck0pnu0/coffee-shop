@@ -5284,7 +5284,8 @@ img {
   .section.section-slider {
     background: #e8e8e8;
     padding: 183px 0 63px;
-    min-height: 180px; }
+    min-height: 180px;
+    overflow: hidden; }
   .section.section-services {
     padding: 120px 0; }
   .section.section-who {
@@ -5373,9 +5374,10 @@ img {
 /* ------------------------------------------------------------ *	slider
 \* ------------------------------------------------------------ */
 .slider-holder {
-  opacity: 0;
+  min-height: 180px;
   visibility: hidden;
-  min-height: 180px; }
+  opacity: 0;
+  -webkit-backface-visibility: hidden; }
   .slider-holder .slider {
     font-size: 13px;
     line-height: 1.62;

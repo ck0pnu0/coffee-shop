@@ -2,10 +2,10 @@
 	slider
 \* ------------------------------------------------------------ */
 .slider-holder {
-	opacity: 0; visibility: hidden; min-height: 180px;
+	min-height: 180px; visibility: hidden; opacity: 0; -webkit-backface-visibility: hidden;
 
 	.slider {
-		font-size: 13px; line-height: 1.62; position: relative; 
+		font-size: 13px; line-height: 1.62; position: relative;
 
 		& h2 {
 			font-family: $myriadpro-bold; font-size: 18px; line-height: 1.2;  text-transform: uppercase; font-color: $base-color; padding-bottom: 6px; 
