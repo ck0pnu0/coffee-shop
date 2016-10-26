@@ -12,14 +12,14 @@
 			float: left; border-left: 1px solid #e6e6e6;  			
 
 			& a {
-				display: block; font-size: 10px; text-transform: uppercase; color: $base-color; text-decoration: none; background: $color-white; padding: 0 28px; transition: background-color 0.2s; position: relative; 
+				display: block; font-size: 10px; text-transform: uppercase; color: $base-color; text-decoration: none; background: $color-white; padding: 0 28px; transition: background-color 0.2s; position: relative; text-align: center; 
 
 				&:hover {
 					text-decoration: none; background-color: $overlay-brown-light; color: $color-white;
 				} 
 
-				& .icon-home {
-					width: 16px; height: 17px; background-image: url(../css/images/sprite.png); position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-position: 0px -26px; 
+				& i {
+					line-height: 20px; font-size: 18px; color: $color-grey; display: block; position: absolute; top: 50%; margin-top: -10px; left: 50%; transform: translateX(-50%); 
 				}
 			}
 
@@ -35,9 +35,9 @@
 				background-color: $overlay-brown-light; color: $color-white;
 			}
 
-			&.current a .icon-home,
-			& a:hover .icon-home {
-				background-position: -38px 0px;
+			&.current a i,
+			&:hover a i {
+				color: $color-white; 
 			}
 		} 
 	}

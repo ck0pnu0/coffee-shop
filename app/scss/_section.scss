@@ -52,6 +52,10 @@
 
 		& .section-head {
 			padding: 0 139px 25px; 
+
+			& i {
+				font-size: 36px; line-height: 42px; color: $color-brown; display: block; margin: 0 auto 10px;  
+			}
 		}
 
 		& .section-body {

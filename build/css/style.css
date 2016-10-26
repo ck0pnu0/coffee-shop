@@ -5323,6 +5323,12 @@ img {
     padding: 144px 0; }
     .section.section-gallery .section-head {
       padding: 0 139px 25px; }
+      .section.section-gallery .section-head i {
+        font-size: 36px;
+        line-height: 42px;
+        color: #826251;
+        display: block;
+        margin: 0 auto 10px; }
     .section.section-gallery .section-body {
       padding: 0 39px;
       display: flex;
@@ -5520,20 +5526,22 @@ img {
         background: #fff;
         padding: 0 28px;
         transition: background-color 0.2s;
-        position: relative; }
+        position: relative;
+        text-align: center; }
         .navigation ul li a:hover {
           text-decoration: none;
           background-color: #845f51;
           color: #fff; }
-        .navigation ul li a .icon-home {
-          width: 16px;
-          height: 17px;
-          background-image: url(../css/images/sprite.png);
+        .navigation ul li a i {
+          line-height: 20px;
+          font-size: 18px;
+          color: #9d9c9d;
+          display: block;
           position: absolute;
           top: 50%;
+          margin-top: -10px;
           left: 50%;
-          transform: translate(-50%, -50%);
-          background-position: 0px -26px; }
+          transform: translateX(-50%); }
       .navigation ul li:first-child {
         border-left: 0; }
         .navigation ul li:first-child a {
@@ -5542,9 +5550,9 @@ img {
       .navigation ul li.current a {
         background-color: #845f51;
         color: #fff; }
-      .navigation ul li.current a .icon-home,
-      .navigation ul li a:hover .icon-home {
-        background-position: -38px 0px; }
+      .navigation ul li.current a i,
+      .navigation ul li:hover a i {
+        color: #fff; }
 
 @media (max-width: 991px) {
   .navigation {
