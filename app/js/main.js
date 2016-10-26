@@ -27,11 +27,22 @@
 			animationSpeed: 600,
 			useCSS: false,
 			controlNav: false,
+			directionNav: false,		
 			start: function(slider) {
 				$('.slider-holder').css({'opacity': 1, 'visibility': 'visible', '-webkit-backface-visibility': 'visible'});
 				slider.resize();
 			}
-		});		
+		});
+
+		$('.slider-nav .prev').on('click', function(e) {
+			e.preventDefault();
+			$slider.flexslider('prev');
+		});
+
+		$('.slider-nav .next').on('click', function(e) {
+			e.preventDefault();
+			$slider.flexslider('next');
+		});
 	});
 
 })(jQuery, window, document);

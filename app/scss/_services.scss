@@ -15,8 +15,8 @@
 	}
 
 	& .service-head {
-		& img {
-			display: block; margin: 0 auto 10px;
+		& i {
+			display: block; margin: 0 auto 10px; font-size: 36px; line-height: 42px; color: $color-brown; 
 		}
 
 		& h3 {

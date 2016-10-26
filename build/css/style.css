@@ -5291,7 +5291,7 @@ img {
   .section.section-who {
     background: #664735;
     font-family: "lucida-sans", Arial, sans-serif;
-    font-size: 11px;
+    font-size: 13px;
     line-height: 2.18;
     color: #fff; }
     .section.section-who h4 {
@@ -5402,24 +5402,29 @@ img {
         font-family: "myriadpro-sboldit", Arial, sans-serif; }
         .slider-holder .slider .slider-cnt a.read-more:hover {
           text-decoration: underline; }
-    .slider-holder .slider .flex-direction-nav a.flex-prev,
-    .slider-holder .slider .flex-direction-nav a.flex-next {
+    .slider-holder .slider .slider-nav {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 10; }
+    .slider-holder .slider .slider-nav a.prev,
+    .slider-holder .slider .slider-nav a.next {
       position: absolute;
       top: 50%;
       left: 0;
       transform: translateY(-50%);
-      font-size: 0;
-      line-height: 0;
-      text-indent: -4004px;
       transition: opacity 0.2s;
-      background-image: url(../css/images/sprite.png);
-      background-position: 0px 0px;
-      width: 14px;
-      height: 21px; }
-      .slider-holder .slider .flex-direction-nav a.flex-prev:hover,
-      .slider-holder .slider .flex-direction-nav a.flex-next:hover {
+      line-height: 21px;
+      font-size: 18px;
+      color: #826251; }
+      .slider-holder .slider .slider-nav a.prev:hover,
+      .slider-holder .slider .slider-nav a.next:hover {
         opacity: 0.7; }
-    .slider-holder .slider .flex-direction-nav a.flex-next {
+    .slider-holder .slider .slider-nav a.next {
       background-position: -19px 0px;
       width: 14px;
       height: 21px;
@@ -5442,9 +5447,12 @@ img {
     padding: 0 25px; }
   .service p {
     padding-bottom: 10px; }
-  .service .service-head img {
+  .service .service-head i {
     display: block;
-    margin: 0 auto 10px; }
+    margin: 0 auto 10px;
+    font-size: 36px;
+    line-height: 42px;
+    color: #826251; }
   .service .service-head h3 {
     padding-bottom: 6px;
     font-family: "myriadpro-bold", Arial, sans-serif;
