@@ -5133,15 +5133,24 @@ img {
 /* ------------------------------------------------------------ *	Logo
 \* ------------------------------------------------------------ */
 .logo a {
-  font-size: 0;
-  line-height: 0;
-  text-indent: -4004px;
   width: 106px;
   height: 52px;
   display: block;
-  background: url(images/logo.png) no-repeat 0 0;
   transition: opacity 0.2s;
-  margin-left: 43px; }
+  margin-left: 43px;
+  font-size: 13px;
+  line-height: 19px;
+  color: #9d9c9d;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase; }
+  .logo a strong {
+    font-weight: 400;
+    font-family: 'Montez', sans-serif;
+    font-size: 54px;
+    line-height: 40px; }
+  .logo a span {
+    color: #664735; }
   .logo a:hover {
     opacity: 0.7; }
 
